@@ -5,7 +5,7 @@ descriptionLong: Das ist ein Test Blog mit gaaaaanz viel Lipsum
 author: Emil Becher
 date: 2023-02-13
 tags: latestPost
-image: /img/blog/article-1.jpg
+image: /img/blog/emiiiiiiiiil.png
 imageAlt: This is a test
 ---
 Lorem **ipsum** dolor sit amet consectetur adipisicing elit. Incidunt nulla dignissimos enim consequatur doloremque quam illum, maxime quia deleniti odio vitae doloribus repellendus aut eos ratione exercitationem omnis perspiciatis? Odio maxime fugiat ea, tempore unde earum commodi tenetur culpa quo mollitia fugit dolores pariatur sit libero corrupti sapiente aliquam soluta ad nobis natus, et porro, eius quidem? Natus quidem doloribus porro, enim iusto esse consequuntur reiciendis nesciunt repudiandae facilis fugiat mollitia error beatae, deleniti, quam neque odio tenetur corporis? Fugiat cupiditate ullam minima nemo dignissimos ab enim quidem necessitatibus id, quas blanditiis expedita eveniet ea obcaecati adipisci officia. 
