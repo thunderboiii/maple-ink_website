@@ -1,12 +1,7 @@
 ---
 title: My Fourth Article
 description: Das ist ein Test Blog
-descriptionLong: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-  reprehenderit corporis. Asperiores sit reprehenderit nostrum hic provident
-  minima voluptatibus sed odio possimus dolor laudantium reiciendis nihil et
-  recusandae qui consectetur tempore quibusdam consequuntur modi perferendis
-  deleniti, sunt perspiciatis incidunt. Voluptatum, ad rem consectetur
-  temporibus sunt voluptas voluptate laborum ab numquam.
+descriptionLong: Das ist ein Test Blog mit gaaaaanz viel Lipsum
 author: Emil Becher
 date: 2023-02-13
 tags: latestPost
