@@ -4,7 +4,8 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('./src/style.css');
     eleventyConfig.addPassthroughCopy('./src/.htaccess');
-
+    
+    eleventyConfig.addPassthroughCopy('./src/admin');
     eleventyConfig.addPassthroughCopy('./src/img');
     eleventyConfig.addPassthroughCopy('./src/includes');
     eleventyConfig.addPassthroughCopy('./src/fonts');
