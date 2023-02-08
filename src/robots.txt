@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /empty.html
+
+Sitemap: https://maple-ink.com/sitemap.xml

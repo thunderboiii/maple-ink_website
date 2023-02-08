@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+    <meta name="description" content="Professionelle und faire Webseiten geschneidert für deine Wünsche. Webdesign um DICH. Bekomme dein erstes Meeting gratis!">
+
+    <meta name="abstract" content="Maple Ink ist eine Webagentur mit Sitz in Münster, Deutschland. Wir bieten Ihrem Unternehmen hochwertige Websites, SEO und die Erstellung von Markeninhalten. Wir arbeiten an Websites für die Gastronomie, um Reservierungsvorgänge effizienter und weniger zeitaufwändig zu gestalten. Dies kann durch Reservierungsformulare direkt auf Ihrer Website und Zahlungsmöglichkeiten für das Essen, das Ihre Gäste vor Ort bestellt haben, erreicht werden. Wir erstellen nicht nur Websites, sondern optimieren diese auch für Suchmaschinen (SEO). Mit unseren Tools und Marketingstrategien auf Platz eins bei Google. Um die Qualität von Fotos und Videos auf Ihrer Website sicherzustellen, bieten wir auch eine Vielzahl von Brand Content Creation an, die perfekt auf Ihr Unternehmen zugeschnitten sind. Aber wir bieten Websites nicht nur in Münster, Nordrhein-Westfalen oder Deutschland an, sondern rund um den Globus. In unserem digitalen Zeitalter sind responsive Websites ein Kernelement, damit Ihr Unternehmen im Web glänzen kann. 92,1 % aller Internetnutzer greifen mit ihren Mobiltelefonen darauf zu, daher lenkt eine Website, die nur auf einen PC passt, die Betrachter oft ab und fühlt sich nicht so befriedigend an wie eine reaktionsschnelle Website, die für Mobiltelefone, Tablets und mehr optimiert ist. ">
+
+    <link class="style" rel="stylesheet" type="text/css" href="/style.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZWPDC2');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD8KWJDPTH"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MD8KWJDPTH');
+    </script>
+
+    <!-- HEAD (here are coming essential things for the website) o((*^▽^*))o-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="webdesign, webdesign agentur, responsive webdesign, webdesign münster, webdesign deutschland, webdesign nrw, webdesign düsseldorf, gastronomie webdesign, webseiten für gastronomie, webseiten für hotels, hotel webdesign">
+    
+    
+    
+    <!-- Typekit -->
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    
+    <!-- Animation Package -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="/scripts/nav.js" defer></script>
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Scripts -->
+    <script src="/scripts/nav.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/icons/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    {% include 'header.njk' %}
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    {% include 'footer.njk' %}
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Empty Template</title>
+    <meta name="description" content="Professionelle und faire Webseiten geschneidert für deine Wünsche. Webdesign um DICH. Bekomme dein erstes Meeting gratis!">
+
+    <meta name="abstract" content="Maple Ink ist eine Webagentur mit Sitz in Münster, Deutschland. Wir bieten Ihrem Unternehmen hochwertige Websites, SEO und die Erstellung von Markeninhalten. Wir arbeiten an Websites für die Gastronomie, um Reservierungsvorgänge effizienter und weniger zeitaufwändig zu gestalten. Dies kann durch Reservierungsformulare direkt auf Ihrer Website und Zahlungsmöglichkeiten für das Essen, das Ihre Gäste vor Ort bestellt haben, erreicht werden. Wir erstellen nicht nur Websites, sondern optimieren diese auch für Suchmaschinen (SEO). Mit unseren Tools und Marketingstrategien auf Platz eins bei Google. Um die Qualität von Fotos und Videos auf Ihrer Website sicherzustellen, bieten wir auch eine Vielzahl von Brand Content Creation an, die perfekt auf Ihr Unternehmen zugeschnitten sind. Aber wir bieten Websites nicht nur in Münster, Nordrhein-Westfalen oder Deutschland an, sondern rund um den Globus. In unserem digitalen Zeitalter sind responsive Websites ein Kernelement, damit Ihr Unternehmen im Web glänzen kann. 92,1 % aller Internetnutzer greifen mit ihren Mobiltelefonen darauf zu, daher lenkt eine Website, die nur auf einen PC passt, die Betrachter oft ab und fühlt sich nicht so befriedigend an wie eine reaktionsschnelle Website, die für Mobiltelefone, Tablets und mehr optimiert ist. ">
+
+    <link class="style" rel="stylesheet" type="text/css" href="/style.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZWPDC2');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD8KWJDPTH"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MD8KWJDPTH');
+    </script>
+
+    <!-- HEAD (here are coming essential things for the website) o((*^▽^*))o-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="webdesign, webdesign agentur, responsive webdesign, webdesign münster, webdesign deutschland, webdesign nrw, webdesign düsseldorf, gastronomie webdesign, webseiten für gastronomie, webseiten für hotels, hotel webdesign">
+    
+    
+    
+    <!-- Typekit -->
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    
+    <!-- Animation Package -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="/scripts/nav.js" defer></script>
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Scripts -->
+    <script src="/scripts/nav.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/icons/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header  id="navbar">
+
+    <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-controls="navigation" aria-expanded="false">
+        <svg stroke="var(--button-color)" class="sandwich" viewbox="-10 -10 120 120" width="50" fill="none" >
+            <path   stroke-width="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+
+            </path>
+        </svg>
+    </button>
+
+    <nav>
+        <center>
+            <ul class="navigation" id="navigation">
+                <div class="brand-mode">
+                    <li class="logo_nav" id="logo_nav">
+                        <div>
+                            <a href="/index.html"><img id="logo_nav_img" src="/img/icons/final_icon_with_text.webp" alt="" width="180px"></a>
+                        </div>
+                    </li>
+                </div>
+                <div class="menus" data-visible="false">
+                    <li>
+                        <a href="/projects">Portfolio</a>
+                    </li>
+                    <li><a href="/index.html#solutions">Lösungen</a>
+                        <ul>
+                            <li><a href="/brand-content-creation">Brand Content Creation</a></li>
+                            <hr style="color: #ccc">
+                            <li><a href="/website_building">Webdesign</a></li>
+                            <hr style="color: #ccc">
+                            <li><a href="/seo">Suchmaschinenoptimierung</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/blog">Blog</a></li>
+
+                    <li class="nav-btns">
+                        <li class="contact-btn">
+                            <button onclick="document.getElementById('contactModal').style.display='flex'; document.getElementById('contactModal').style.position='absolute'; document.querySelector('html').style.overflowY='hidden'">Kontakt</button>
+                        </li>
+
+                        <li class="language-li"><button class="language-btn" id="language-btn">DE
+                            <ul class="languages" id="languages">
+                                <li><a href="/en">EN</a></li>
+                            </ul></button>
+                        </li>
+
+                        <script src="/scripts/languageBtn.js"></script>
+                    </li>
+                </div>
+
+            </ul>
+        </center>
+        <script src="/scripts/nav.js" defer></script>
+    </nav>
+</header>
+
+<script src="/scripts/nav.js" defer></script>
+<script src="/scripts/scroll_change.js"></script>
+
+<section id="contactModal">
+    <div class="wrapper">
+        <div class="top">
+            <h4>Wir helfen Ihnen gerne</h4>
+            <button onclick="document.getElementById('contactModal').style.display='none'; document.getElementById('contactModal').style.position='fixed'; document.querySelector('html').style.overflowY='scroll'"><i class='bx bx-x' ></i></button>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-ways">
+                <div>
+                    <div>
+                        <img src="/img/img_placeholder.webp" alt="">
+                    </div>
+
+                    <div>
+                        <p>Emil Becher</p><br>
+                        <p><a href="mailto:emil@maple-ink.com">emil@maple-ink.com</a></p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div>
+                        <i class='bx bx-envelope' ></i>
+                    </div>
+                    
+                    <div>
+                        <p>E-Mail</p><br>
+                        <p><a href="mailto:info@maple-ink.com">info@maple-ink.com</a></p>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <i class='bx bx-phone' ></i>
+                    </div>
+
+                    <div>
+                        <p>Telefon</p><br>
+                        <p><a href="tel:+491781969007"></a>0178 / 1969 007</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="adress">
+                <p><b>Maple Ink inh. Emil Becher</b></p>
+                <p>Postfach 42 01 30</p>
+                <p>48068 Münster</p>
+                <p>Deutschland</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="/includes/contact_form.inc.php" method="post">
+                <i class='bx bx-user'></i><input type="text" name="name" placeholder="Erika Mustermann"  required><br>
+                <i class='bx bx-buildings' ></i><input type="text" name="company" placeholder="Mustermann GmbH" required><br>
+                <i class='bx bx-envelope' ></i><input type="email" name="mail" placeholder="info@mustermann.de" required><br>
+                <i class='bx bx-edit-alt' ></i><textarea name="message" id=""></textarea>
+                <center><button type="submit" name="submit">Abschicken</button></center>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <main>
+        
+<section class="#">
+
+</section>
+<section class="page_section">
+
+</section>
+    </main>
+
+    <footer>
+    <!--FOOTER (small little things which are on every site e. g. content) o((*^ڡ^*))o-->
+
+    <div style="height: 10px;"></div>
+    <div class="footer-sm">
+        <ul>
+            <li>
+                <button><a href="https://www.youtube.com/channel/UC2b-A7MEKCfoXvoRvTW2nfA" target="_blank"><i class='bx bxl-youtube' ></i></a></button>
+            </li>
+
+            <li>
+                <button><a href="https://instagram.com/mapleink.software" target="_blank"><i class='bx bxl-instagram' ></i></a></button>
+            </li>
+
+            <li>
+                <button><a href="https://tiktok.com/maple_ink.official" target="_blank"><i class='bx bxl-tiktok'></i></a></button>
+            </li>
+
+            <li>
+                <button><a href="https://www.linkedin.com/company/maple-ink-web/" target="_blank"><i class='bx bxl-linkedin' ></i></a></button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="divider50"></div>
+    
+    <div class="footer-sitemap">
+        <div>
+            <p><b>Lösungen</b></p>
+            <ul>
+                <li><a href="brand-content-creation">Brand Content Creation</a></li>
+                <li><a href="website_building">Webdesign</a></li>
+                <li><a href="seo">Suchmaschinenoptimierung</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p><b>Maple Ink</b></p>
+            <ul>
+                <li><a href="projects">Unsere Projekte</a></li>
+                <li><a href="gastronomy">Gastronomie Webseiten</a></li>
+                <li><a href="hotel">Hotel Webseiten</a></li>
+            </ul>
+        </div>
+
+        <!--<div>
+            <p><b>Partner</b></p>
+            <ul>
+                <li><a href="projects">Partner and Co.</a></li>
+                <li><a href="gastronomy">The Partner Program</a></li>
+                <li><a href="hotel">Another Partner's Company</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p><b>Das Team</b></p>
+            <ul>
+                <li><a href="projects">Emil Becher</a></li>
+                <li><a href="gastronomy">Jonas Behr</a></li>
+                <li><a href="hotel">Another Human Being</a></li>
+            </ul>
+        </div>  -->
+    </div>
+
+    <div class="divider100"></div>
+    
+    <div class="footer-bottom" id="footer">
+        <div>
+            <a href="https://maple-ink.com"><img class="footer_logo" src="/img/icons/final_icon_with_text.webp" alt="" width="140px"></a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="imprint">Impressum</a></li>
+                <li><a href="data">Datenschutz</a></li>
+                <li><a href="cookies">Cookies</a></li>
+                <li><a href="gtc">AGBs</a></li>
+            </ul>
+        </div>
+        <div class="divider50"></div>
+    </div>
+
+</footer>
+</body>
+</html>

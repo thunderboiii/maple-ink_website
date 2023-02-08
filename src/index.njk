@@ -1,0 +1,183 @@
+---
+title: Maple Ink | Deine Individuelle Webseite
+layout: 'base.njk'
+---
+
+<section class="index-banner">
+    <script src="3D-Animations/banner.js" type="module"></script>
+
+    <img src="img/polka.png" alt="" class="index-polka hidden reveal-down">
+
+    <div class="container">
+        <div class="stats">
+            <div class="hidden reveal-up">
+                <p>Internet Statistiken</p>
+            </div>
+
+            <div class="hidden reveal-up">
+                <h2>5.03M</h2>
+                <p>Nutzer Weltweit</p>
+            </div>
+
+            <div class="hidden reveal-up">
+                <h2>500K</h2>
+                <p>Neue Nutzer pro Tag</p>
+            </div>
+
+            <div class="hidden reveal-up">
+                <h2>1.14M</h2>
+                <p>Webseiten Online</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-title hidden reveal-left" id="banner-title">
+        <div class="title_text">
+            <h1>Eine Website geschneidert für dich</h1>
+            <p>Wir bauen eine maßgeschneiderte Website für dich, damit die ganze Welt sie sehen kann. Mithilfe von individuellem Brand Content, einzigartigem Webdesign und einer starken Suchmaschinenoptimierung, bringen wir dich und dein Business ins richtige Licht.</p>
+
+            <div class="divider50"></div>
+
+            <button class="banner-title_contact-btn" onclick="document.getElementById('contactModal').style.display='flex'; document.getElementById('contactModal').style.position='absolute'; document.querySelector('html').style.overflowY='hidden'">Termin Vereinbaren</button>
+            <a href="#learn_more"><button>Mehr Erfahren</button></a>
+        </div>
+    </div>
+    <script src="scroll_change.js" defer></script>
+    
+    <div class="spacer layered-waves_1"></div>
+
+
+</section>
+
+<div class="spacer layered-waves_2" id="learn_more"></div>
+
+<section class="page_section" id="page_section">
+    <div class="divider50 isMobile"></div>
+
+    <div class="outside_the_box">
+        <h4>Deine Vision. Unsere Mission.</h4>
+        <h1>Think Outside the Box</h1>
+        <h1>Lass uns deine Website individuell machen</h1>
+        <br>
+        <br>
+
+        <center><button class="index_contact-btn" onclick="document.getElementById('contactModal').style.display='flex';  document.body.scrollTo(0, 0); document.querySelector('html').style.overflowY='hidden';">Kontakt</button></center>
+
+        <canvas id="bg" width="420px" height="210"></canvas>
+        <script src="3D-Animations/box.js" type="module"></script>
+    </div>
+
+    
+</section>
+
+<div class="divider200"></div>
+
+<section id="solutions" class="solutions">
+    <div class="cards">
+        <a href="brand-content-creation.html">
+            <div class="solution card hidden reveal-left">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <h4>Brand Content Creation</h4>
+                    <h2>Wir rücken deine Visionen und Ideen ins richtige Licht.</h2>
+                </div>
+            </div>
+        </a>
+    
+        <a href="website_building.html">
+            <div class="solution card hidden reveal-scale">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <h4>Webdesign</h4>
+                    <h2>Eine einzigartige und perfekte Website für deinen Nutzen, designed von uns.</h2>
+                    <center><img src="img/website_building/websites.webp" alt="" width="500px"></center>
+                </div>
+            </div>
+        </a>
+            
+        <a href="seo.html">
+            <div class="solution card hidden reveal-right">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <h4>Search Engine Optimization</h4>
+                    <h2>Unser Weg, damit deine Ideen die Suchmaschinen erleuchten.</h2>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<div class="divider500"></div>
+
+<section class="page_section">
+    <div class="gastronomy" id="gastronomy">
+        <h4>Reduziere dein Zeitaufwand</h4>
+        <h1>Webseiten für die Gastronomie</h1>
+        <h2>Wenn dein Lokal Reservierung online anbietet, kannst du [...]% Zeit sparen und vorort investieren.</h2>
+        <div class="container">
+            <div>
+                <h1 class="hidden reveal-left">9% mehr Zeit</h1>
+            </div>
+            <div class="reservation hidden reveal-right">
+                <h4>Probier's selbst</h4>
+                <form action="includes/reservation_form.inc.php" method="post" class="reservation-form">
+                    <input type="text" placeholder="Dein Name" name="name" required><br>
+                    <input type="email" placeholder="Deine E-Mail Adresse" name="mail" required><br>
+                    <input type="datetime-local" name="time" required><br>
+                    <input type="number" placeholder="Personen" name="persons" required><br>
+                    <center><button type="submit" name="submit">Reservieren</button></center>
+                    <center><p>Alle Felder sind verpflichtend.</p></center>
+                </form>
+            </div>
+        </div>
+        <h2>Spare weitere [...]% Zeit und mach Zahlabläufe im Nachhinein online erhätlich.</h2>
+        <h2><a href="gastronomy.html">Lies hier mehr!</a></h2>
+
+    </div>
+</section>
+
+<div class="divider500"></div>
+
+<section class="climate">
+    <div class="wrapper">
+        <h4>Sauber im Design und in der Technologie</h4>
+        <h1>Eine CO²-neutrale Website</h1>
+        <div class="cards-glassmo">
+            <div class="card-glassmo hidden reveal-left">
+                <i class='bx bx-leaf' ></i>
+                <p>CO²-Neutral</p>
+            </div>
+            <div class="card-glassmo hidden reveal-left">
+                <i class='bx bx-tachometer'></i>
+                <p>Schnelle Server</p>
+            </div>
+            <div class="card-glassmo hidden reveal-left">
+                <i>9%</i>
+                <p>weniger CO²</p>
+            </div>
+            <div class="card-glassmo hidden reveal-left">
+
+            </div>
+        </div>
+    </div>               
+</section>
+
+<!-- <section class="page_section">
+    <div class="reviews">
+        <div class="slide-container">
+            <div class="slide-content">
+                <div class="review-wrapper">
+                    <div class="review glow">
+                        <h2>"Ein sehr guter Service"</h2>
+                        <p>- eine Person</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section> -->
+
+<script src="scripts/reveal-animation.js"></script>
+<script src="scripts/hover_boxes.js"></script>
+
