@@ -27,6 +27,13 @@
     gtag('config', 'G-MD8KWJDPTH');
     </script>
 
+
+    <!-- Netlify CMS -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
+
+
     <!-- HEAD (here are coming essential things for the website) o((*^▽^*))o-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -288,5 +295,17 @@ Quaerat unde magnam eius reiciendis necessitatibus consequuntur a dolorum quis f
     </div>
 
 </footer>
+
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+    </script>
 </body>
 </html>
