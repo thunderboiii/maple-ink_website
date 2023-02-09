@@ -405,6 +405,8 @@ textarea {
     margin: 0px 1.3em 30px;
 }
 
+
+
 li {
     color: var(--color-text);
     font-family: var(--font-text);
@@ -1569,6 +1571,10 @@ body.light .switch::before{
 
 .gastronomy h2 {
     text-align: center;
+}
+
+@media only screen and (min-width: 1280px) {
+    
 }
 
 @media only screen and (min-width: 50em) {
@@ -3027,7 +3033,7 @@ footer {
 
 
 /*PC*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 50em) {
     /*STANDARD*/
     * {
         text-decoration: none;
@@ -3803,6 +3809,13 @@ footer {
         backdrop-filter: blur(20em);
         box-shadow: inset white 0 0 20px;
         padding: 20px;
+    }
+
+    #solutions .card.shrink {
+        transform: 
+            scaleY(.9)
+            translateY(1em);
+        
     }
     
     #solutions div h2,
