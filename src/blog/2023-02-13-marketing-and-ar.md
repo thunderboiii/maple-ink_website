@@ -14,4 +14,4 @@ tags:
 image: /img/blog/emiiiiiiiiil.png
 imageAlt: A woman with AR Glasses in which Marketing is reflected
 ---
-**Stuff**
+Marketing has always been evolving. So did it evolve when the Internet became more popular and websites were a new possible medium to present your work. But also when social media was launched, Social Media Marketing became a thing. Now with the
