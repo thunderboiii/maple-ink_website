@@ -19,3 +19,5 @@ collections:
     - { label: "Featured Image", name: "image", widget: "image" }
     - { label: "Image Caption", name: "imageAlt", widget: "string" }
     - { label: "Body", name: "body", widget: "markdown" }
+site_url: https://maple-ink.com
+logo_url: https://maple-ink.com/img/icons/icon_final.svg
