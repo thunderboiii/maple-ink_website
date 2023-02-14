@@ -11,6 +11,7 @@ author: Emil Becher
 date: 2023-02-13T11:45:59.904Z
 tags:
   - post
+  - bigPost
 image: /img/blog/emiiiiiiiiil.png
 imageAlt: A woman with AR Glasses in which Marketing is reflected
 ---
