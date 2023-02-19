@@ -38,7 +38,7 @@ layout: 'base.njk'
 
             <div class="divider50"></div>
 
-            <button class="banner-title_contact-btn" onclick="document.getElementById('contactModal').style.display='flex'; document.getElementById('contactModal').style.position='absolute'; document.querySelector('html').style.overflowY='hidden'">Termin Vereinbaren</button>
+            <a href="#contact"><button class="banner-title_contact-btn">Termin Vereinbaren</button></a>
             <a href="#learn_more"><button>Mehr Erfahren</button></a>
         </div>
     </div>
@@ -61,7 +61,7 @@ layout: 'base.njk'
         <br>
         <br>
 
-        <center><button class="index_contact-btn" onclick="document.getElementById('contactModal').style.display='flex';  document.body.scrollTo(0, 0); document.querySelector('html').style.overflowY='hidden';">Kontakt</button></center>
+        <center><a href="#contact"><button class="index_contact-btn" >Kontakt</button></a></center>
 
         <canvas id="bg" width="420px" height="210"></canvas>
         <script src="3D-Animations/box.js" type="module"></script>
@@ -75,7 +75,7 @@ layout: 'base.njk'
 <section id="solutions" class="solutions">
     <div class="cards">
         <a href="brand-content-creation.html">
-            <div class="solution card shrink hidden reveal-left">
+            <div class="solution card shrink hidden reveal-left show" style="--mouse-x:397px; --mouse-y:-34.225px;">
                 <div class="card-border"></div>
                 <div class="card-content">
                     <h4>Brand Content Creation</h4>
@@ -85,7 +85,7 @@ layout: 'base.njk'
         </a>
     
         <a href="website_building.html">
-            <div class="solution  card hidden reveal-scale">
+            <div class="solution card hidden reveal-scale show" style="--mouse-x:-29.625px; --mouse-y:1.375px;">
                 <div class="card-border"></div>
                 <div class="card-content">
                     <h4>Webdesign</h4>
@@ -96,10 +96,10 @@ layout: 'base.njk'
         </a>
             
         <a href="seo.html">
-            <div class="solution shrink card hidden reveal-right">
+            <div class="solution shrink card hidden reveal-right show" style="--mouse-x:-613.781px; --mouse-y:-34.225px;">
                 <div class="card-border"></div>
                 <div class="card-content">
-                    <h4>Search Engine Optimization</h4>
+                    <h4>Social Media Marketing</h4>
                     <h2>Unser Weg, damit deine Ideen die Suchmaschinen erleuchten.</h2>
                 </div>
             </div>

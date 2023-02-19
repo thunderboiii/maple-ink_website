@@ -39,7 +39,7 @@
 
                     <li class="nav-btns">
                         <li class="contact-btn">
-                            <button onclick="document.getElementById('contactModal').style.display='flex'; document.getElementById('contactModal').style.position='absolute'; document.querySelector('html').style.overflowY='hidden'">Kontakt</button>
+                            <a href="#contact"><button>Kontakt</button></a>
                         </li>
 
                         <li class="language-li"><button class="language-btn" id="language-btn">DE
@@ -60,67 +60,3 @@
 
 <script src="/scripts/nav.js" defer></script>
 <script src="/scripts/scroll_change.js"></script>
-
-<section id="contactModal">
-    <div class="wrapper">
-        <div class="top">
-            <h4>Wir helfen Ihnen gerne</h4>
-            <button onclick="document.getElementById('contactModal').style.display='none'; document.getElementById('contactModal').style.position='fixed'; document.querySelector('html').style.overflowY='scroll'"><i class='bx bx-x' ></i></button>
-        </div>
-
-        <div class="contact-info">
-            <div class="contact-ways">
-                <div>
-                    <div>
-                        <img src="/img/img_placeholder.webp" alt="">
-                    </div>
-
-                    <div>
-                        <p>Emil Becher</p><br>
-                        <p><a href="mailto:emil@maple-ink.com">emil@maple-ink.com</a></p>
-                    </div>
-                </div>
-                
-                <div>
-                    <div>
-                        <i class='bx bx-envelope' ></i>
-                    </div>
-                    
-                    <div>
-                        <p>E-Mail</p><br>
-                        <p><a href="mailto:info@maple-ink.com">info@maple-ink.com</a></p>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <i class='bx bx-phone' ></i>
-                    </div>
-
-                    <div>
-                        <p>Telefon</p><br>
-                        <p><a href="tel:+491781969007"></a>0178 / 1969 007</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="adress">
-                <p><b>Maple Ink inh. Emil Becher</b></p>
-                <p>Postfach 42 01 30</p>
-                <p>48068 Münster</p>
-                <p>Deutschland</p>
-            </div>
-        </div>
-
-        <div class="contact-form">
-            <form action="/includes/contact_form.inc.php" method="post" name="Contact Form" netlify>
-                <input type="hidden" name="subject" value="Contact Form at maple-ink.com" /><input>
-                <i class='bx bx-user'></i><input type="text" name="name" placeholder="Erika Mustermann"  required><br>
-                <i class='bx bx-buildings' ></i><input type="text" name="company" placeholder="Mustermann GmbH" required><br>
-                <i class='bx bx-envelope' ></i><input type="email" name="mail" placeholder="info@mustermann.de" required><br>
-                <i class='bx bx-edit-alt' ></i><textarea name="message" id=""></textarea>
-                <center><button type="submit" name="submit">Abschicken</button></center>
-            </form>
-        </div>
-    </div>
-</section>

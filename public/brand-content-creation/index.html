@@ -39,7 +39,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="webdesign, webdesign agentur, responsive webdesign, webdesign münster, webdesign deutschland, webdesign nrw, webdesign düsseldorf, gastronomie webdesign, webseiten für gastronomie, webseiten für hotels, hotel webdesign">
     
-    
+    <!-- SlideJS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.css" rel="stylesheet">
     
     <!-- Typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
@@ -103,7 +104,7 @@
 
                     <li class="nav-btns">
                         <li class="contact-btn">
-                            <button onclick="document.getElementById('contactModal').style.display='flex'; document.getElementById('contactModal').style.position='absolute'; document.querySelector('html').style.overflowY='hidden'">Kontakt</button>
+                            <a href="#contact"><button>Kontakt</button></a>
                         </li>
 
                         <li class="language-li"><button class="language-btn" id="language-btn">DE
@@ -124,69 +125,6 @@
 
 <script src="/scripts/nav.js" defer></script>
 <script src="/scripts/scroll_change.js"></script>
-
-<section id="contactModal">
-    <div class="wrapper">
-        <div class="top">
-            <h4>Wir helfen Ihnen gerne</h4>
-            <button onclick="document.getElementById('contactModal').style.display='none'; document.getElementById('contactModal').style.position='fixed'; document.querySelector('html').style.overflowY='scroll'"><i class='bx bx-x' ></i></button>
-        </div>
-
-        <div class="contact-info">
-            <div class="contact-ways">
-                <div>
-                    <div>
-                        <img src="/img/img_placeholder.webp" alt="">
-                    </div>
-
-                    <div>
-                        <p>Emil Becher</p><br>
-                        <p><a href="mailto:emil@maple-ink.com">emil@maple-ink.com</a></p>
-                    </div>
-                </div>
-                
-                <div>
-                    <div>
-                        <i class='bx bx-envelope' ></i>
-                    </div>
-                    
-                    <div>
-                        <p>E-Mail</p><br>
-                        <p><a href="mailto:info@maple-ink.com">info@maple-ink.com</a></p>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <i class='bx bx-phone' ></i>
-                    </div>
-
-                    <div>
-                        <p>Telefon</p><br>
-                        <p><a href="tel:+491781969007"></a>0178 / 1969 007</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="adress">
-                <p><b>Maple Ink inh. Emil Becher</b></p>
-                <p>Postfach 42 01 30</p>
-                <p>48068 Münster</p>
-                <p>Deutschland</p>
-            </div>
-        </div>
-
-        <div class="contact-form">
-            <form action="/includes/contact_form.inc.php" method="post">
-                <i class='bx bx-user'></i><input type="text" name="name" placeholder="Erika Mustermann"  required><br>
-                <i class='bx bx-buildings' ></i><input type="text" name="company" placeholder="Mustermann GmbH" required><br>
-                <i class='bx bx-envelope' ></i><input type="email" name="mail" placeholder="info@mustermann.de" required><br>
-                <i class='bx bx-edit-alt' ></i><textarea name="message" id=""></textarea>
-                <center><button type="submit" name="submit">Abschicken</button></center>
-            </form>
-        </div>
-    </div>
-</section>
 
     <main>
         
@@ -265,7 +203,23 @@
 <script src="/scripts/hover_boxes.js"></script>
     </main>
 
-    <footer>
+    <section id="contact">
+    <div class="contact-area">
+        <img src="" alt="">
+        <form action="" netlify>
+            <h1>Kontakt</h1>
+            <h4>Nimm Kontakt zu uns auf</h4>
+            <input type="text" name="name" placeholder="Vorname" required>
+            <input type="text" name="surname" placeholder="Nachname" required><br>
+            <input type="text" name="company" id="" placeholder="Firma" required><br>
+            <input type="email" name="email" id="" placeholder="E-Mail Adresse" required><br>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Nachricht" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer>
     <!--FOOTER (small little things which are on every site e. g. content) o((*^ڡ^*))o-->
 
     <div style="height: 10px;"></div>
@@ -347,6 +301,8 @@
     </div>
 
 </footer>
+
+
 
     <script>
         if (window.netlifyIdentity) {
