@@ -1,23 +1,14 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "public/img/blog"
-public_folder: "/img/blog"
+media_folder: "public/img/uploads"
+public_folder: "/img/uploads"
 collections: 
- - name: "blog"
-   label: "Blog"
-   folder: "src/blog"
+ - name: "portfolio"
+   label: "Portfolio"
+   folder: "_portfolio"
    create: true
-   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
    fields:
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Description", name: "description", widget: "string" }
-    - { label: "Long Description", name: "descriptionLong", widget: "string" }
-    - { label: "Author", name: "author", widget: "string" }
-    - { label: "Date", name: "date", widget: "datetime" }
-    - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-    - { label: "Featured Image", name: "image", widget: "image" }
-    - { label: "Image Caption", name: "imageAlt", widget: "string" }
-    - { label: "Body", name: "body", widget: "markdown" }
-site_url: https://maple-ink.com
-logo_url: https://maple-ink.com/img/icons/icon_final.svg
+    - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+    - {label: "Description", name: "description", widget: "string"}
+    - {label: "Image", name: "image", widget: "image"}
