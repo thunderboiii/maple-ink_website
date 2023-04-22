@@ -13,6 +13,8 @@ collections:
     - {label: "Title", name: "title", widget: "string", tagname: "h2"}
     - {label: "Description", name: "description", widget: "string"}
     - {label: "Image", name: "image", widget: "image"}
+    - {label: "Icon", name: "icon", widget: "image"}
+    - {label: "Tags", name: "tags", widget: "list", default: ['portfolio']}
  - name: "latest-work"
    label: "Latest Work"
    folder: "_work"
@@ -20,5 +22,5 @@ collections:
    fields:
     - {label: "Hero Image", name: "hero-image", widget: "image"}
     - {label: "Icon", name: "icon", widget: "image"}
-    - {label: "Social Media", name: "social-media", widget: "select", options: ['facebook', 'instagram', 'linkedin', 'tiktok']}
+    - {label: "Social Media", name: "social-media", widget: "select", options: ['Facebook', 'Instagram', 'Linkedin', 'TikTok']}
     - {label: "Slogan", name: "slogan", widget: "string"}
