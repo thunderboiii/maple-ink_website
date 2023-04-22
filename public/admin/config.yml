@@ -19,5 +19,6 @@ collections:
    create: true
    fields:
     - {label: "Hero Image", name: "hero-image", widget: "image"}
-    - {label: "Social Media", name: "social-media", widget: "select"}
+    - {label: "Icon", name: "icon", widget: "image"}
+    - {label: "Social Media", name: "social-media", widget: "select", options: ['facebook', 'instagram', 'linkedin', 'tiktok']}
     - {label: "Slogan", name: "slogan", widget: "string"}
