@@ -20,4 +20,3 @@ collections:
     - {label: "Hero Image", name: "hero-image", widget: "image"}
     - {label: "Social Media", name: "social-media", widget: "select"}
     - {label: "Slogan", name: "slogan", widget: "string"}
-    - {label: "Colors", name: "colors", widget: "list", default: ['#fff', "#111", "#ababab"]}
