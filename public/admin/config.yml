@@ -7,7 +7,7 @@ public_folder: "/img/uploads"
 collections: 
  - name: "portfolio"
    label: "Portfolio"
-   folder: "_portfolio"
+   folder: "src/_portfolio"
    create: true
    fields:
     - {label: "Title", name: "title", widget: "string", tagname: "h2"}
@@ -17,7 +17,7 @@ collections:
     - {label: "Tags", name: "tags", widget: "list", default: ['portfolio']}
  - name: "latest-work"
    label: "Latest Work"
-   folder: "_work"
+   folder: "src/_work"
    create: true
    fields:
     - {label: "Hero Image", name: "hero-image", widget: "image"}
