@@ -24,3 +24,4 @@ collections:
     - {label: "Icon", name: "icon", widget: "image"}
     - {label: "Social Media", name: "social-media", widget: "select", options: ['Facebook', 'Instagram', 'Linkedin', 'TikTok']}
     - {label: "Slogan", name: "slogan", widget: "string"}
+    - {label: "Tags", name: "tags", widget: "list", default: ['work']}
