@@ -12,7 +12,7 @@ collections:
     - {label: "Title", name: "title", widget: "string", tagname: "h2"}
     - {label: "Description", name: "description", widget: "string"}
     - {label: "Image", name: "image", widget: "image"}
-  - name: "latest-work"
+ - name: "latest-work"
    label: "Latest Work"
    folder: "_work"
    create: true
