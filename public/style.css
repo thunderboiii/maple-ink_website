@@ -658,6 +658,8 @@ header ul li a {
         flex-direction: column;
         align-items: center;
         margin-inline: 0;
+
+        padding: 1rem;
     }
     
     .last-work .work {
