@@ -247,6 +247,14 @@ p {
     line-height: normal;
 }
 
+.small {
+    font-style: italic;
+    font-size: 18px;
+    opacity: .6;
+    line-height: normal;
+    margin-top: 2rem;
+}
+
 a {
     color: var(--color-dominant-100);
     text-decoration: none;
@@ -499,14 +507,6 @@ header ul li a {
     margin-bottom: 1rem;
 }
 
-.index-hello .hello .small {
-    font-style: italic;
-    font-size: 18px;
-    opacity: .6;
-    line-height: normal;
-    margin-top: 2rem;
-}
-
 @media (max-width: 44.999em) {
     .index-hello {
         display: flex;
@@ -554,6 +554,11 @@ header ul li a {
 .last-work .work .hero-picture {
     border-radius: 1rem;
     overflow: hidden;
+    
+}
+
+.last-work .work .hero-picture img {
+    transition: all ease-in-out .2s;
 }
 
 .last-work .work img {
@@ -586,6 +591,15 @@ header ul li a {
     justify-content: center;
     background-color: #111;
     border-radius: 1rem;
+}
+
+.last-work .work .right:hover {
+    box-shadow: #1111116c -15px 20px 40px;
+    z-index: 10;
+}
+
+.last-work .work .hero-picture:hover img {
+    transform: scale(120%);
 }
 
 .last-work .work .icon img {
@@ -676,7 +690,7 @@ header ul li a {
 .index-workflow .steps {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 
     margin-top: 100px;
