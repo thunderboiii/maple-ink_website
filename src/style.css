@@ -412,7 +412,7 @@ header ul li a {
     text-align: left;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 44.999em) {
     .hero-text h1 {
         font-size: 64px;
     }
@@ -436,11 +436,20 @@ header ul li a {
     .hero-bg-text h1 {
         font-size: 120px;
     }
-}
 
-@media (max-width: 44.999em) {
     .index-hero .wrapper .hero-text h1 {
         font-size: 64px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1180px) 
+  and (orientation: landscape) {
+
+
+    .index-hero .wrapper .hero-text h1 {
+        font-size: 160px;
     }
 }
 
@@ -523,6 +532,17 @@ header ul li a {
 
     .index-hello .hello {
         width: 20rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1180px) 
+  and (orientation: landscape) {
+
+
+    .index-hello {
+        margin-inline: 2em;
     }
 }
 
@@ -674,6 +694,31 @@ header ul li a {
         "colors ";
         gap: 1rem;
         margin-top: 3rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1180px) 
+  and (orientation: landscape) {
+
+
+    .last-work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 0;
+
+        padding-right: 3rem;
+        padding-left: 2rem;
+    }
+
+    .last-work .work .slogan {
+        padding: 10px;
+    }
+
+    .last-work .work .slogan p {
+        text-align: center;
     }
 }
 
@@ -969,6 +1014,7 @@ header ul li a {
     padding: 0.75rem;
     border-radius: 50%;
     z-index: 10;
+    object-fit: contain;
 }
 
 .portfolio .accordion-panel:nth-child(1) {
@@ -1102,6 +1148,61 @@ header ul li a {
 
 .contact-text {
     width: 60%;
+}
+
+@media (max-width: 44.999em) {
+
+    .contact-sect {
+        height: 100vh;
+    }
+    
+    .contact-sect .wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10em;
+    }
+    
+    .contact-sect .wrapper h1 {
+        font-size: 50px;
+    }
+    
+    .contact-sect .contact-form {
+        width: 100%;
+        padding-top: 6em;
+    }
+    
+    .contact-sect .contact-form form {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .contact-sect .contact-form input.block,
+    .contact-sect .contact-form textarea {
+        width: 15em;
+        margin-top: 2em;
+    }
+    
+    .contact-sect .contact-form input.inline {
+        width: 15em;
+        display: block;
+    }
+    
+    .contact-sect .contact-form button {
+        padding: 1em 1em;
+        width: 15em;
+    }
+    
+    
+    .contact-sect .contact-info {
+        width: 100%;
+        padding-bottom: 2em;
+    }
+    
+    .contact-text {
+        width: 16em;
+    }
 }
 
 
