@@ -32,7 +32,8 @@ collections:
    create: true
    fields:
     - {label: "Title", name: "title", widget: "string"}
-    - {label: "Profile Picture", name: "profile-pic", widget: "image"}
+    - {label: "Author", name: "author", widget: "string"}
+    - {label: "Profile Picture", name: "pfp", widget: "image"}
     - {label: "Date", name: "date", widget: "date", format: "DD.MM.YYYY"}
     - {label: "Tags", name: "tags", widget: "list", default: ['review']}
     - {label: "Text", name: "text", widget: "markdown"}

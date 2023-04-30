@@ -811,18 +811,52 @@ header ul li a {
     margin-block: 20rem;
 }
 
+.testimonials .wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    
+    width: 54rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
 .testimonials .testimonial {
     padding: 2rem;
     background-color: #111;
     border-radius: 1rem;
     position: relative;
-    width: 50rem;
+    min-width: 50rem;
+    scroll-snap-align: center;
+}
+
+.testimonials .testimonial .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 43rem;
+}
+
+.testimonials .testimonial .author-div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonial .author-div .author {
+    font-size: 25px;
+}
+
+.testimonials .testimonial .author-div .pfp {
+    border-radius: 50%;
+    width: 50px;
 }
 
 
 .testimonials .testimonial .review {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     gap: 8px;
     margin-bottom: .5rem
@@ -1253,4 +1287,75 @@ header ul li a {
 
 .imprint .wrapper .other-law .adresse .content {
     padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BackEnd */
+
+
+/* Portfolio Site */
+.portfolio-s_hero {
+    height: 100vh;
+    position: relative;
+}
+
+.portfolio-s_hero .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.portfolio-s_hero .hero-bg-text {
+    overflow-y: hidden;
+}
+
+.portfolio-s_hero .hero-bg-text h1 {
+    font-size: 230px;
+}
+
+.portfolio-sw_gallary {
+    margin-inline: 4em;
+}
+
+.portfolio-sw_gallary .images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.portfolio-sw_gallary .big-img {
+    width: 40%;
+    border-radius: 10px;
+    flex-grow: 3;
+}
+
+.portfolio-sw_gallary .middle-img {
+    width: 30%;
+    border-radius: 10px;
+    flex-grow: 2;
+}
+
+.portfolio-sw_gallary .small-img {
+    width: 20%;
+    border-radius: 10px;
+    flex-grow: 1;
 }
