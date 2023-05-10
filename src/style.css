@@ -374,7 +374,8 @@ header ul li a {
     transform: translateY(-120%);
 
     margin-inline: 2em;
-    z-index: -1;
+    z-index: 0;
+    position: relative;
 }
 
 .lower-hero .social-btns ul li {
@@ -1277,7 +1278,8 @@ header ul li a {
     width: calc(22rem - (35px * 2));
     border-radius: 20px;
     padding: 35px;
-    z-index: 1000;
+    z-index: 10;
+    position: relative;
 
     display: flex;
     align-items: center;

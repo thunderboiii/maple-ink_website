@@ -34,6 +34,5 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Author", name: "author", widget: "string"}
     - {label: "Profile Picture", name: "pfp", widget: "image"}
-    - {label: "Date", name: "date", widget: "date", format: "DD.MM.YYYY"}
     - {label: "Tags", name: "tags", widget: "list", default: ['review']}
     - {label: "Text", name: "text", widget: "markdown"}
