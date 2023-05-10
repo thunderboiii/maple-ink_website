@@ -1269,6 +1269,7 @@ header ul li a {
 .imprint .wrapper .other-law {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     padding-top: 5em;
 }
@@ -1284,6 +1285,16 @@ header ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.imprint .wrapper .other-law .divs:not(.adresse) div {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.imprint .wrapper .other-law .divs:not(.adresse) div i {
+    font-size: 30px;
 }
 
 .imprint .wrapper .other-law .divs:not(.adresse):hover {
@@ -1316,6 +1327,47 @@ header ul li a {
 
 .imprint .wrapper .imprint-content {
     padding-top: 5em;
+}
+
+@media (max-width: 35em) {
+    .imprint .wrapper {
+        display: flex;
+        flex-direction: column;
+    
+        height: 100%;
+        margin-inline: 1rem;
+        gap: 4em;
+    }
+
+    .imprint .other-law {
+        margin-top: 3em;
+    }
+
+    .imprint .other-law h2 {
+        font-size: 25px;
+    }
+
+    .imprint .other-law i {
+        font-size: 25px !important;
+    }
+
+    .imprint .wrapper .other-law .divs:not(.adresse) {
+        padding: 20px;
+        width: calc(17rem - (20px * 2));
+    }
+
+    .imprint .wrapper .other-law .adresse {
+        width: 17rem;
+    }
+
+    .imprint .wrapper .other-law .adresse p {
+        font-size: 18px;
+    }
+
+    .imprint .wrapper .imprint-content {
+        padding-bottom: 4em;
+        padding-top: 0;
+    }
 }
 
 
