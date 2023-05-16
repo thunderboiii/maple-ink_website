@@ -15,6 +15,13 @@ collections:
     - {label: "Image", name: "image", widget: "image"}
     - {label: "Icon", name: "icon", widget: "image"}
     - {label: "Tags", name: "tags", widget: "list", default: ['portfolio']}
+    - label: "Gallary"
+      name: "gallary"
+      widget: "list"
+      summary: '{{ fields.image }}'
+      allow_add: true
+      fields:
+       - {label: Image, name: image, widget: image}
  - name: "latest-work"
    label: "Latest Work"
    folder: "src/_work"

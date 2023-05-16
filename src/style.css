@@ -1428,39 +1428,22 @@ header ul li a {
     font-size: 230px;
 }
 
-.portfolio-sw_gallary {
-    margin-inline: 4em;
-}
 
-.portfolio-sw_gallary .images {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 1em;
-}
-
-.portfolio-sw_gallary .big-img {
-    width: 40%;
-    border-radius: 10px;
-    flex-grow: 3;
-}
-
-.portfolio-sw_gallary .middle-img {
-    width: 30%;
-    border-radius: 10px;
-    flex-grow: 2;
-}
-
-.portfolio-sw_gallary .small-img {
-    width: 20%;
-    border-radius: 10px;
-    flex-grow: 1;
-}
 
 
 /* PORTFOLIO GALLARY */
+.portfolio-sw_gallary {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-sw_gallary #bigImage {
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 1000px 100px #00000071;
+}
+
 .pin-container {
     --_card-with: 250px;
     --_card-border-radius: 16px;
@@ -1477,8 +1460,6 @@ header ul li a {
     grid-template-columns: repeat(auto-fill, 250px);
     grid-auto-rows: 10px;
     justify-content: center;
-
-    background-color: #006d19;
 }
 
 .pin-container .card {
@@ -1486,6 +1467,13 @@ header ul li a {
     margin: 15px 10px;
     background-color: red;
     border-radius: 16px;
+    overflow: hidden;
+}
+
+.pin-container .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .pin-container .card_small {
