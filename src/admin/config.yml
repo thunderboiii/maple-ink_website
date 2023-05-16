@@ -21,7 +21,12 @@ collections:
       summary: '{{ fields.image }}'
       allow_add: true
       fields:
-       - {label: Image, name: image, widget: image}
+       - {label: Image, name: gallaryImage, widget: image}
+       - label: "Size"
+         name: "size"
+         widget: "select"
+         options: ["small", "medium", "large"]
+       - {label: "Tag", name: "tag", widget: "list", default: [gallaryImageTag]}
  - name: "latest-work"
    label: "Latest Work"
    folder: "src/_work"
