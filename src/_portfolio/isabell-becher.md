@@ -7,4 +7,8 @@ tags:
   - portfolio
 gallary:
   - image: /img/uploads/accordion-1.png
+    gallaryImage: /img/uploads/accordion-1.png
+    size: large
+    tag:
+      - gallaryImageTag
 ---
