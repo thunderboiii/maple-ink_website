@@ -189,9 +189,9 @@ select {
 :root {
     --color-accent-400: #8b70ff;
     
-    --color-dominant-900: #2c2c2c;
-    --color-dominant-700: #3e3e3e;
-    --color-dominant-100: #fff;
+    --color-dominant-900: #2a2a2b;
+    --color-dominant-700: #3c3c3d;
+    --color-dominant-100: #f5f5f7;
 }
 
 html {
@@ -274,6 +274,7 @@ hr {
 
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
     background-color: var(--color-dominant-900);
     border-radius: 10px;
 }
@@ -823,10 +824,15 @@ header ul li a {
     scroll-snap-type: x mandatory;
 }
 
+.testimonials ::-webkit-scrollbar-thumb {
+    background-color: var(--color-accent-400);
+    border-radius: 0 0 5px 5px;
+}
+
 .testimonials .testimonial {
     padding: 2rem;
     background-color: #111;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
     position: relative;
     min-width: 50rem;
     scroll-snap-align: center;
@@ -890,12 +896,23 @@ header ul li a {
 
 @media (max-width: 44.999em) {
     .testimonials .testimonial {
-        width: 18rem;
+        min-width: 18rem;
+    }
+
+    .testimonials .wrapper {
+        width: calc(18rem + 2rem * 2);
     }
 
     .testimonials .testimonial .text {
         width: 18rem;
     }
+
+    .testimonials .testimonial .container {
+        flex-direction: column;
+        width: 15rem;
+        align-items: flex-start;
+    }
+    
 }
 
 
@@ -1162,6 +1179,8 @@ header ul li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 21px;
     transition: .2s all ease;
+    position: relative;
+    z-index: 10;
 }
 
 .contact-sect .contact-form button:hover {
@@ -1438,4 +1457,45 @@ header ul li a {
     width: 20%;
     border-radius: 10px;
     flex-grow: 1;
+}
+
+
+/* PORTFOLIO GALLARY */
+.pin-container {
+    --_card-with: 250px;
+    --_card-border-radius: 16px;
+    --_row-increment: 10px;
+    --_card_small: 26;
+    --_card_medium: 33;
+    --_card_large: 45;
+
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-auto-rows: 10px;
+    justify-content: center;
+
+    background-color: #006d19;
+}
+
+.pin-container .card {
+    padding: 0;
+    margin: 15px 10px;
+    background-color: red;
+    border-radius: 16px;
+}
+
+.pin-container .card_small {
+    grid-row-end: span 26;
+}
+
+.pin-container .card_medium {
+    grid-row-end: span 33;
+}
+
+.pin-container .card_large {
+    grid-row-end: span 45;
 }
