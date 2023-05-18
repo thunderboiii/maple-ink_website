@@ -998,6 +998,12 @@ header ul li a {
     border-radius: calc(((var(--_panel-padding) * 2) + var(--_button-size)) / 2);
 }
 
+.portfolio .accordion-content {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
 .portfolio .accordion-content > p{
     transform: translateY(2rem);
     opacity: 0;
@@ -1008,6 +1014,23 @@ header ul li a {
 
 .portfolio .accordion-panel:has([aria-expanded="true"]) .accordion-content > p {
     transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio .accordion-link {
+    text-align: right;
+    margin-right: calc(var(--_button-size) + (var(--_panel-gap) * 2.5));
+    margin-top: 30%;
+}
+
+.portfolio .accordion-link i {
+    opacity: .8;
+    transition: 200ms all ease-in;
+    font-size: 30px;
+    transform: translateY(20%);
+}
+
+.portfolio .accordion-link i:hover {
     opacity: 1;
 }
 
