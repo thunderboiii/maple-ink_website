@@ -39,8 +39,8 @@ layout: 'base.njk'
     <img src="" alt="" id="bigImage">
     
     <div class="pin-container">
-        {%- for gallaryImageTag in collections.portfolio.data.gallary.gallaryImageTag -%}
-            <div class="card card_{{ portfolio.data.gallary.size }}"><img src="{{ portfolio.data.gallary.gallaryImage }}" alt="" id="image"></div>
+        {%- for item in collections.portfolio.data.gallary -%}
+            <div class="card card_{{ item.size }}"><img src="{{ item.gallaryImage }}" alt="" id="image"></div>
         {%- endfor -%}
     </div>
 
