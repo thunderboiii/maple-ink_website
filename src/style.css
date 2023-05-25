@@ -988,10 +988,6 @@ header ul li a {
     }
 }
 
-.portfolio .accordion-panel:hover {
-    cursor: pointer;
-}
-
 .portfolio .accordion-panel:has([aria-expanded="true"]) {
     flex-basis: clamp(15rem, 40vh, 20rem);
     flex-grow: 1;
@@ -1110,6 +1106,95 @@ header ul li a {
     background: transparent;
     border: 0;
     padding: 0;
+}
+
+
+
+
+
+
+.solution-sect {
+    height: 100vh;
+    position: relative;
+}
+
+.solution-sect .hero-bg-text h1 {
+    overflow-y: hidden;
+}
+
+.solution-sect .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.solution-sect .wrapper .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "a b c"
+    "a d d";
+    gap: 1rem;
+    width: 55vw;
+    height: 35rem;
+}
+
+.solution-sect .wrapper .container .panel {
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.solution-sect .wrapper .container .panel h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.solution-sect .wrapper .container .panel:hover h2 {
+    left: 1rem;
+    top: 1rem;
+}
+
+.solution-sect .wrapper .container .panel .description {
+    transform: translateY(200%);
+    transition: all ease 500ms;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    opacity: 0;
+}
+
+.solution-sect .wrapper .container .panel:hover .description {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.solution-sect .wrapper .container .panel.print {
+    grid-area: b;
+    background-color: red;
+}
+
+.solution-sect .wrapper .container .panel.social-media {
+    grid-area: c;
+    background-color: pink;
+}
+
+.solution-sect .wrapper .container .panel.brand-creation {
+    grid-area: a;
+    background-color: violet;
+}
+
+.solution-sect .wrapper .container .panel.webdesign {
+    grid-area: d;
+    background-color: navy;
+}
+
+.solution-sect .wrapper .container .panel.webdesign .description {
+    width: 50%;
 }
 
 
