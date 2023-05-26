@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Supriseee!!</title>
+    <meta name="description" content="Professionelle und faire Webseiten geschneidert für deine Wünsche. Webdesign um DICH. Bekomme dein erstes Meeting gratis!">
+    <meta name="abstract" content="">
+    <meta name="og:image" content="">
+    <meta name="keywords" content="">
+
+    <link class="style" rel="stylesheet" type="text/css" href="/style.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZWPDC2');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD8KWJDPTH"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MD8KWJDPTH');
+    </script>
+
+
+    <!-- Netlify CMS -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
+
+
+    <!-- HEAD (here are coming essential things for the website) o((*^▽^*))o-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="webdesign, webdesign agentur, responsive webdesign, webdesign münster, webdesign deutschland, webdesign nrw, webdesign düsseldorf, gastronomie webdesign, webseiten für gastronomie, webseiten für hotels, hotel webdesign">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="polyrythm-body">
+
+    <main>
+        
+<section class="polyrythm-sect">
+    <canvas id="paper">
+
+    </canvas>
+
+    <script src="/scripts/polyrythm.js"></script>
+</section>
+    </main>
+
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+    </script>
+</body>
+</html>
