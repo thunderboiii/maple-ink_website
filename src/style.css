@@ -354,7 +354,7 @@ header ul li a {
 
 .index-hero .wrapper .hero-text hr {
     border: none;
-    background: linear-gradient(rgb(255, 56, 56) 0% 16.66%, rgb(255, 177, 33) 16.66% 32.32%, rgb(255, 238, 0) 33.32% 49.98%, rgb(18, 97, 20) 49.98% 66.64%, rgb(45, 45, 144) 66.64% 83.3%, rgb(85, 31, 110) 83.3% 100%);
+    background: var(--color-accent-400);/* linear-gradient(rgb(255, 56, 56) 0% 16.66%, rgb(255, 177, 33) 16.66% 32.32%, rgb(255, 238, 0) 33.32% 49.98%, rgb(18, 97, 20) 49.98% 66.64%, rgb(45, 45, 144) 66.64% 83.3%, rgb(85, 31, 110) 83.3% 100%); */
     width: 56.5%;
     right: 0;
     margin: 0;
