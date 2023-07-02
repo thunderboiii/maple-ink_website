@@ -1,19 +1,18 @@
 ---
-title: Empty Template
 layout: 'base.njk'
 ---
 
-<section class="portfolio-s_hero">
+<section class="index-hero portfolio_base-hero">
     <div class="wrapper">
         <div class="hero-text">
-            <h1>Isabell Becher</h1>
+            <h1>{{ title }}</h1>
         </div>
     </div>
 
     <div class="lower-hero">
         <img src="/img/Decoration Line.png" alt="">
 
-        <a href="#index-hello"><i class='bx bx-chevron-down'></i></a>
+        <a href="#portfolio-page"><i class='bx bx-chevron-down'></i></a>
 
         <div class="social-btns">
             <ul>
@@ -31,18 +30,20 @@ layout: 'base.njk'
     </div>
 
     <div class="hero-bg-text">
-        <h1>Musiktherapeutin</h1>
+        <h1>Case Study</h1>
     </div>
 </section>
 
-<section class="portfolio-sw_gallary">
-    <img src="" alt="" id="bigImage">
-    
-    <div class="pin-container">
-        {%- for item in collections.portfolio.data.gallary -%}
-            <div class="card card_{{ item.size }}"><img src="{{ item.gallaryImage }}" alt="" id="image"></div>
-        {%- endfor -%}
+<section class="portfolio-page" id="portfolio-page">
+    <div class="sidebar">
+        {% for portfolio in collections.portfolio %}
+            <a href="{{ portfolio.url }}"><button>{{ portfolio.data.title }}</button></a>
+        {% endfor %}
     </div>
 
-    <script src="/scripts/gallary.js"></script>
+    <div class="content">
+        <h2>{{ pageTitle }}</h2>
+        
+        {{ content | safe}}
+    </div>
 </section>
