@@ -1297,6 +1297,7 @@ header .dropdown-menu .dropdown-links {
 .portfolio .accordion-panel:nth-child(2) {
     --_panel-color: blue;
 }
+
 /* MOREEEEEEEEEEEEEEE */
 
 .portfolio .accordion-trigger {
@@ -1309,6 +1310,49 @@ header .dropdown-menu .dropdown-links {
     padding: 0;
 }
 
+
+/* Portfolio Base */
+.portfolio_base-hero .hero-text h1 {
+    font-size: 150px !important;
+}
+
+.portfolio-page {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 10rem;
+
+
+    padding: 3rem 15rem 5rem;
+}
+
+.portfolio-page .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-left: var(--color-dominant-100) solid 2px;
+    padding-left: 3rem;
+    padding-block: 4rem;
+}
+
+.portfolio-page .sidebar button {
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    border: 0;
+    background-color: #ccc;
+    font-size: 21px;
+    color: var(--color-dominant-900);
+    width: max-content;
+}
+
+.portfolio-page .sidebar button:hover {
+    cursor: pointer;
+    box-shadow: #11111193 0px 0px 12px;
+}
+
+.portfolio-page .content p {
+    margin-top: 1rem;
+}
 
 
 
