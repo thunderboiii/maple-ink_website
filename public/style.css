@@ -512,6 +512,17 @@ header .dropdown-menu .dropdown-links {
     text-decoration: underline;
 }
 
+@media (max-width: 35em) {
+    .cookies-banner {
+        padding: 1rem;
+    }
+
+    .cookies-banner .cookie-inside {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
 
 
 
