@@ -16,5 +16,3 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum illo labo
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum illo labore laudantium iusto quod quidem ad! Asperiores fugiat sint ipsam minus sequi corporis ut!
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum illo labore laudantium iusto quod quidem ad! Asperiores fugiat sint ipsam minus sequi corporis ut!
-
-![](/img/uploads/banner_main.png)
