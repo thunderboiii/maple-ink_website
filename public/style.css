@@ -464,6 +464,7 @@ header .dropdown-menu .dropdown-links {
     border-radius: 1rem;
 
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .cookies-banner .cookie-buttons {
@@ -481,6 +482,7 @@ header .dropdown-menu .dropdown-links {
     height: 2rem;
     width: max-content;
     background: linear-gradient(var(--color-accent-400), #4b37a3);
+    color: var(--color-dominant-100) !important;
     border-radius: .5rem;
     border: none;
 }
@@ -499,7 +501,7 @@ header .dropdown-menu .dropdown-links {
 
 .cookies-banner .cookie-buttons .cookies-close:hover {
     background: linear-gradient(var(--color-accent-400), #4b37a3);
-    color: var(--color-dominant-100);
+    color: var(--color-dominant-100) !important;
     cursor: pointer;
 }
 
