@@ -14,18 +14,8 @@ collections:
     - {label: "Image", name: "image", widget: "image"}
     - {label: "Icon", name: "icon", widget: "image"}
     - {label: "Tags", name: "tags", widget: "list", default: ['portfolio']}
-    - label: "Gallary"
-      name: "gallary"
-      widget: "list"
-      summary: '{{ fields.image }}'
-      allow_add: true
-      fields:
-       - {label: Image, name: gallaryImage, widget: image}
-       - label: "Size"
-         name: "size"
-         widget: "select"
-         options: ["small", "medium", "large"]
-       - {label: "Tag", name: "tag", widget: "list", default: [gallaryImageTag]}
+    - {label: "Page Title", name: "pageTitle", widget: "string", tagname: "h2"}
+    - {label: "Body", name: "body", widget: markdown}
  - name: "latest-work"
    label: "Latest Work"
    folder: "src/_work"
