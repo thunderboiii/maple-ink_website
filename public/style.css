@@ -288,6 +288,19 @@ hr {
     background: var(--color-dominant-900);
 }
 
+ol {
+    margin-left: 4rem;
+    margin-block: 1rem;
+}
+
+ol li {
+    color: var(--color-dominant-100);
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    line-height: normal;
+}
+
 
 
 
