@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="131" height="130" viewBox="0 0 131 130">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.283" y1="-0.03" x2="0.865" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8b70ff"/>
+      <stop offset="1" stop-color="#463880"/>
+    </linearGradient>
+    <clipPath id="clip-Artboard_1">
+      <rect width="131" height="130"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
+    <text id="Aetheria" transform="translate(66 74)" fill="#fb0" font-size="40" font-family="PalaceScriptMT, Palace Script MT"><tspan x="-44.16" y="0">Aetheria</tspan></text>
+    <path id="Glass" d="M46.871,41.478q-1.852-1.774-3.6-3.648c-.981-1-1.571-1.721-1.571-1.721l-7.38-3.524a18.479,18.479,0,1,0-1.732,1.734l3.524,7.38s.725.59,1.721,1.571c1.02.957,2.362,2.251,3.648,3.6L47.33,53.4l1.592,1.7,5.591-5.591-1.7-1.592C51.811,46.942,48.2,42.78,46.871,41.478Zm-26.42-7.159c-7.267,0-13.821-6.6-13.821-13.867s6.554-14.11,13.821-14.11,13.865,6.843,13.865,14.11S27.718,34.319,20.451,34.319Z" transform="matrix(-0.035, 0.999, -0.999, -0.035, 58.765, 47.774)" fill="url(#linear-gradient)"/>
+    <g id="Instance_1" data-name="Instance 1">
+      <path id="in1_p2" d="M1362.065,942.5,1372,924.85h35.218" transform="translate(-1321 -877)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="in1_p1" d="M1356.8,947.275l-5.418-20.92h-29.8" transform="translate(-1321 -877)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <g id="Instance_2" data-name="Instance 2">
+      <path id="in2_p2" d="M1415.644,947.275l-9.482,29.047h38.83" transform="translate(-1321 -877)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="in2_p1" d="M1420.912,940.051l13.094-12.04H1396.53" transform="translate(-1321 -877)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <g id="Instance_3" data-name="Instance 3">
+      <path id="in3_p2" d="M1385.243,940.8l-9.03,21.823h-35.519" transform="translate(-1321 -877)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="in3_p1" d="M1393.671,940.8l-1.957-28.295H1354.69" transform="translate(-1321 -877)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
