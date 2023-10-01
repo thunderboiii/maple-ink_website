@@ -925,7 +925,8 @@ header .dropdown-menu .dropdown-links {
         "icon"
         "socials"
         "slogan"
-        "colors ";
+        "colors "
+        "link";
         gap: 1rem;
         margin-top: 3rem;
     }
@@ -1016,18 +1017,18 @@ header .dropdown-menu .dropdown-links {
     .index-workflow .steps .step {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         width: 100%;
 
         margin-top: 100px;
     }
 
     .index-workflow .steps .step h2 {
-        text-align: center;
+        text-align: left;
     }
 
     .index-workflow .steps .step p {
-        text-align: center;
+        text-align: left;
     }
 }
 
