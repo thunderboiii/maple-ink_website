@@ -1,7 +1,8 @@
 ---
 title: Schillergymnasium Münster
-description: Together with the Schillergymnasium Münster we created a beautiful
-  new website, matching their philosophies of teaching.
+description: "Schillergymnasium Münster: A case study in the successful redesign
+  of a renowned German school's website to achieve modernity, sophistication,
+  and improved user engagement."
 image: /img/uploads/main.png
 icon: /img/uploads/favicon.ico
 tags:
