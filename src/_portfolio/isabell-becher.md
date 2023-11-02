@@ -1,6 +1,8 @@
 ---
 title: Isabell Becher
-description: Lorem ipsum dolor sit amet.
+description: "Isabell Becher's Website Revamp: A successful project that
+  improved user experience, highlighted therapy benefits, and boosted online
+  presence."
 image: /img/uploads/banner_main.png
 tags:
   - portfolio
