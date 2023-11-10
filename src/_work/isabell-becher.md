@@ -1,9 +1,9 @@
 ---
-title: Isabell Becher
-heroImage: /img/uploads/banner_main.png
-icon: /img/uploads/icon_in_text_light.png
+title: Schillergymnasium Münster
+heroImage: /img/uploads/main.png
+icon: https://schillergymnasium.netlify.app/img/icons/favicon.ico
 social-media: Facebook
-slogan: '"Klingen um in mir zu wohnen."'
+slogan: Pietati - Virtuti - Doctrinae
 tags:
   - work
 ---
