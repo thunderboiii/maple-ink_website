@@ -789,12 +789,12 @@ header .dropdown-menu .dropdown-links {
 
 .last-work .work .hero-picture {
     border-radius: 1rem;
-    overflow: hidden;
-    
+    overflow: hidden;   
 }
 
 .last-work .work .hero-picture img {
     transition: all ease-in-out .2s;
+    object-fit: cover;
 }
 
 .last-work .work img {
@@ -857,7 +857,8 @@ header .dropdown-menu .dropdown-links {
 }
 
 .last-work .work .icon img {
-    width: 80%;
+    height: 100px;
+    width: auto;
 }
 
 .last-work .work .socials {
@@ -887,23 +888,23 @@ header .dropdown-menu .dropdown-links {
 }
 
 .last-work .work .colors .color-1 {
-    background-color: #008a20;
-    border-color: #006d19;
+    background-color: #302F60;
+    border-color: #232248;
 }
 
 .last-work .work .colors .color-2 {
-    background-color: #49dc6b;
-    border-color: #41c25f;
+    background-color: #EEBD1E;
+    border-color: #d89505;
 }
 
 .last-work .work .colors .color-3 {
-    background-color: #212121;
-    border-color: #1c1c1c;
+    background-color: #111;
+    border-color:  #242424;
 }
 
 .last-work .work .colors .color-4 {
-    background-color: #efefef;
-    border-color: #dedede;
+    background-color: #fff;
+    border-color: #ccc;
 }
 
 @media (max-width: 44.999em) {
