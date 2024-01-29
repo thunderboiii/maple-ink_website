@@ -1,0 +1,85 @@
+---
+layout: base.njk
+---
+
+<section>
+    <div class="container hero-section">
+        <div class="side-hero">
+            <hr class="vr1">
+        </div>
+        
+        <div class="hero-left">
+            <h1>{{title}}</span></h1>
+            <p><b>Client:</b> {{ client }}</p>
+            <p><b>Branch:</b> {{ branch }}</p>
+            <p><b>Service:</b> {{ service }}</p>
+        </div>
+
+        <div class="hero-right">
+            <h1>楓と墨</h1>
+            {# <img src="/img/pages/index/hero-img.jpg" alt="" class="hero-img color">
+            <img src="/img/pages/index/hero-img-sw.png" alt="" class="hero-img sw">
+            <img src="/img/pages/index/hero-img-sw.png" alt="" class="hero-img sw deko"> #}
+        </div>
+        
+        <div class="lower-hero">
+            <div class="sm">
+                <a href="https://instagram.com" target="_blank"> <i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://pinterest.com" target="_blank"><i class='bx bxl-pinterest' ></i></a>
+                <a href="https://tiktok.com" target="_blank"><i class='bx bxl-tiktok' ></i></a>
+                <a href="https://youtube.com" target="_blank"><i class='bx bxl-youtube' ></i></a>
+            </div>
+
+            <div class="slogan">
+                <hr class="hr-left">
+                <p>Putting the Art in your Brand</p>
+                <hr class="hr-right">
+
+            </div>
+        </div>  
+    </div>                             
+</section>
+
+<section class="cs-image">
+    <img src="{{ mainImg }}" alt="">
+</section>
+
+<section class="cs-text about">
+    <h2>About {{ client_short }}</h2>
+    <p>{{ about }}</p>
+</section>
+
+<section class="cs-image">
+    <img src="{{ creatingImg }}" alt="">
+</section>
+
+<section class="cs-text progress">
+    <h2>Creating the Project</h2>
+    <p>{{ creating }}</p>
+</section>
+
+<section class="cs-gallery">
+    <div class="grid">
+        <img src="{{ gallery1 }}" alt="">
+        <img src="{{ gallery2 }}" alt="">
+        <img src="{{ gallery3 }}" alt="">
+        <img src="{{ gallery4 }}" alt="">
+    </div>
+</section>
+
+<section class="cs-text result">
+    <h2>{{ client_short}}'s Results</h2>
+    <p>{{ result }}</p>
+</section>
+
+<section class="cs-testimonial">
+    <div class="testimonial">
+        <p class="text">{{ testimonial }}</p>
+        <hr>
+        <p class="author">{{ author }}</p>
+    </div>
+</section>
+
+<section class="start-own dark-obj">
+    <a href="/contact" class="move" data-value="-3">Get Started</a>
+</section>
