@@ -1,3 +1,4 @@
+
 document.addEventListener("mousemove", (e) => {
     document.querySelectorAll(".move").forEach(function(move) {
         var movingValue = move.getAttribute("data-value");
@@ -89,4 +90,96 @@ window.addEventListener("scroll", checkHeaderPosition);
 
 // Initial check when the page loads
 checkHeaderPosition();
+
+
+// // Wait for the DOM to be ready
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Function to check if an element has a class
+//     function hasClass(element, className) {
+//       return element.classList.contains(className);
+//     }
+  
+//     // Function to create a new image element
+//     function createImage(src, className) {
+//       const img = document.createElement("img");
+//       img.src = src;
+//       img.className = className;
+//       return img;
+//     }
+  
+//     // Function to update the hover images based on the slideshow
+//     function updateHoverImages() {
+//       const images = document.querySelectorAll(".hover-image");
+//       let currentIndex = 0;
+  
+//       return function () {
+//         images.forEach((img, index) => {
+//           img.style.display = index === currentIndex ? "block" : "none";
+//         });
+  
+//         currentIndex = (currentIndex + 1) % images.length;
+//       };
+//     }
+  
+//     // Function to initialize the hover images display
+//     function initializeHoverImagesDisplay() {
+//       const images = document.querySelectorAll(".hover-image");
+//       images.forEach((img, index) => {
+//         img.style.display = index === 0 ? "block" : "none";
+//       });
+//     }
+  
+//     // Call the initialization function once
+//     initializeHoverImagesDisplay();
+  
+//     // Call updateHoverImages to set up the slideshow
+//     const updateImages = updateHoverImages();
+//     setInterval(updateImages, 1000);
+  
+//     // Variables to track mouse position
+//     let mouseX = 0;
+//     let mouseY = 0;
+  
+//     // Function to handle mouse movement
+//     // Function to handle mouse movement
+// function handleMouseMove(event) {
+//     mouseX = event.clientX;
+//     mouseY = event.clientY;
+  
+//     // Check if the element under the mouse contains the class "image-hover-wrapper"
+//     const imageWrapper = document.elementFromPoint(mouseX, mouseY);
+//     if (imageWrapper && hasClass(imageWrapper, "image-hover-wrapper")) {
+//       // Check if there is an element with id "hover-images" inside the "image-hover-wrapper"
+//       const hoverImagesWrapper = imageWrapper.querySelector("#hover-images");
+//       if (hoverImagesWrapper) {
+//         // Check if there are img elements with class "hover-image" inside "hover-images"
+//         const hoverImages = hoverImagesWrapper.querySelectorAll(".hover-image");
+//         if (hoverImages.length > 0) {
+//           // Follow the mouse with the center of each hover image
+//           hoverImages.forEach((img) => {
+//             const rect = img.getBoundingClientRect();
+//             const offsetX = rect.width / 2;
+//             const offsetY = rect.height / 2;
+//             img.style.left = mouseX - offsetX + "px";
+//             img.style.top = mouseY - offsetY + "px";
+//           });
+  
+//           return;
+//         }
+//       }
+//     }
+  
+//     // If no suitable elements are found, hide all hover images
+//     const allHoverImages = document.querySelectorAll(".hover-image");
+//     allHoverImages.forEach((img) => {
+//       img.style.display = "none";
+//     });
+//   }
+  
+  
+//     // Add event listener for mouse movement
+//     document.addEventListener("mousemove", handleMouseMove);
+//   });
+  
+  
 
