@@ -2980,7 +2980,7 @@ section {
 
 .plans .plan .plan__footer {
     padding: 1.5rem;
-    margin-inline: 4rem;
+    margin-inline: 2rem;
     border-top: 1px var(--color-dom-300) solid;
     display: flex;
     flex-direction: column;
@@ -2994,7 +2994,6 @@ section {
     border: var(--secondary-70) 2px solid;
     color: var(--text);
     transition: 200ms all ease-in;
-    white-space: nowrap;
 }
 
 .plans .plan--highlighted .plan__cta {
