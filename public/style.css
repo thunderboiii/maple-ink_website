@@ -1140,8 +1140,12 @@ section {
     }
 
     .index-hero-left h1 {
-        text-align: center;
+        text-align: left;
         margin: 0;
+    }
+
+    .index-hero-left p {
+        margin: 0 !important;
     }
 
     .hero-section .side-hero {
