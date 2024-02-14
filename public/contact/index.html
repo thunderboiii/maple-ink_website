@@ -74,8 +74,8 @@
                     <div class="dropdown-links">
                         <a href="/corporate-website"><b>Corporate Website</b><br>For Businesses</a>
                         <a href="/personal-website"><b>Portfolio Website</b><br>For Indivuals and Artists</a>
-                        <a href="/ecommerce-website"><b>E-Commerce Website</b><br>For Shops and Stores</a>
-                        <a href="/seo"><b>SEO</b><br>For Optimization</a>
+                        
+                        <a href="/maintenance"><b>Maintenance</b><br>For Continuing Support</a>
 
                     </div>
                 </div>
@@ -139,8 +139,8 @@
                     <div class="dropdown-links">
                         <a href="/corporate-website"><b>Corporate Website</b><br>For Businesses</a>
                         <a href="/personal-website"><b>Portfolio Website</b><br>For Indivuals and Artists</a>
-                        <a href="/ecommerce-website"><b>E-Commerce Website</b><br>For Shops and Stores</a>
-                        <a href="/seo"><b>SEO</b><br>For Optimization</a>
+                        
+                        <a href="/maintenance"><b>Maintenance</b><br>For Continuing Support</a>
 
                     </div>
                 </div>
@@ -248,6 +248,16 @@
             <p>Which service do you want?</p>
             <div class="input-holder">
                 <div class="check">
+                    <input type="checkbox" name="branding" id="corporate_branding"></iunput>
+                    <label for="corporate_branding">Corporate Branding</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="branding" id="personal_branding"></iunput>
+                    <label for="personal_branding">Personal Branding</label>
+                </div>
+                
+                <div class="check">
                     <input type="checkbox" name="branding" id="corporate_web"></iunput>
                     <label for="corporate_web">Corporate Webdesign</label>
                 </div>
@@ -257,30 +267,14 @@
                     <label for="personal_web">Portfolio Webdesign</label>
                 </div>
 
-                <div class="check">
-                    <input type="checkbox" name="branding" id="ecommerce"></iunput>
-                    <label for="ecommerce">E-Commerce</label>
-                </div>
+                
 
                 <div class="check">
-                    <input type="checkbox" name="branding" id="seo"></iunput>
-                    <label for="seo">SEO</label>
+                    <input type="checkbox" name="branding" id="maintenance"></iunput>
+                    <label for="maintenance">Maintenance</label>
                 </div>
 
-                <div class="check">
-                    <input type="checkbox" name="branding" id="corporate_branding"></iunput>
-                    <label for="corporate_branding">Corporate Branding</label>
-                </div>
-
-                <div class="check">
-                    <input type="checkbox" name="branding" id="personal_branding"></iunput>
-                    <label for="personal_branding">Personal Branding</label>
-                </div>
-
-                <div class="check">
-                    <input type="checkbox" name="branding" id="product_branding"></iunput>
-                    <label for="product_branding">Product Branding</label>
-                </div>
+                
 
                 <div class="check">
                     <input type="checkbox" name="branding" id="social_media"></iunput>
@@ -292,10 +286,7 @@
                     <label for="social_ads">Social Advertisement</label>
                 </div>
 
-                <div class="check">
-                    <input type="checkbox" name="branding" id="pr"></iunput>
-                    <label for="pr">Public Relations</label>
-                </div>
+                
             </div>
         </div>
 
@@ -406,6 +397,8 @@
 </script>
 
 <script src="/scripts/nav.js"></script>
+
+    <script src="/scripts/reveal-animation.js"></script>
 
     <script>
         if (window.netlifyIdentity) {

@@ -1,53 +1,80 @@
 ---
-title: Portfolio | Maple Ink
+title: Our Best Works
 layout: base.njk
 ---
 
-<section class="portfolio">
-    <div class="container"> 
-        <div class="accordion">
-            {%- for portfolio in collections.portfolio -%}
-                {%- if loop.first -%}
-                    <div class="accordion-panel">
-                        <h2 id="panel1-heading">
-                            <button class="accordion-trigger" aria-controls="panel1-content" aria-expanded="true">
-                                <a href="{{ portfolio.url }}"><span class="accordion-title" id="panel1-title">{{ portfolio.data.title }}</span></a> 
-                                <img aria-hidden="true" class="accordion-icon" src="{{ portfolio.data.icon }}"></img>
-                            </button>
-                        </h2>
-                        <div class="accordion-content" id="panel1-content" aria-labelledby="panel1-heading" role="region" aria-hidden="false">
-                            <p>{{ portfolio.data.description }}</p>
-                            <img class="accordion-image" src="{{ portfolio.data.image }}" alt="">
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <p class="accordion-link"><a style="color: #fff;" href="{{ portfolio.data.link }}" target="_blank">view website</a></p>
-                        </div>
-                    </div>
-                {%- else -%}
-                    <div class="accordion-panel">
-                        <h2 id="panel1-heading">
-                            <button class="accordion-trigger" aria-controls="panel1-content" aria-expanded="false">
-                                <span class="accordion-title" id="panel1-title">{{ portfolio.data.title }}</span> 
-                                <img aria-hidden="true" class="accordion-icon" src="{{ portfolio.data.icon }}"></img>
-                            </button>
-                        </h2>
-                        <div class="accordion-content" id="panel1-content" aria-labelledby="panel1-heading" role="region" aria-hidden="true">
-                            <p>{{ portfolio.data.description }}</p>
-                            <img class="accordion-image" src="{{ portfolio.data.image }}" alt="">
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <p class="accordion-link"><a style="color: #fff;" href="{{ portfolio.data.link }}" target="_blank">view website</a></p>
-                        </div>
-                    </div>
-                {%- endif -%}
-            {%- endfor -%}
+<section>
+    <div class="container hero-section">
+        <div class="side-hero">
+            <hr class="vr1">
+        </div>
+        
+        <div class="hero-left">
+            <h1>Discover our<br><span class="colorful">best works</span></h1>
+            <p>Websites for Businesses</p>
+        </div>
 
-            <script src="/scripts/accordion.js"></script> 
+        <div class="hero-right">
+            <h1>楓と墨</h1>
+            {# <img src="/img/pages/index/hero-img.jpg" alt="" class="hero-img color">
+            <img src="/img/pages/index/hero-img-sw.png" alt="" class="hero-img sw">
+            <img src="/img/pages/index/hero-img-sw.png" alt="" class="hero-img sw deko"> #}
+        </div>
+        
+        <div class="lower-hero">
+            <div class="sm">
+                <a href="https://instagram.com" target="_blank"> <i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://pinterest.com" target="_blank"><i class='bx bxl-pinterest' ></i></a>
+                <a href="https://tiktok.com" target="_blank"><i class='bx bxl-tiktok' ></i></a>
+                <a href="https://youtube.com" target="_blank"><i class='bx bxl-youtube' ></i></a>
+            </div>
+
+            <div class="slogan">
+                <hr class="hr-left">
+                <p>Putting the Art in your Brand</p>
+                <hr class="hr-right">
+
+            </div>
+
+            
+        </div>  
+    </div>                             
+</section>
+
+<section class="works dark-obj">
+    <div class="work-span">
+        <div class="work small look-link">
+            <div class="image">
+                <p>01</p>
+            </div>
+            <div class="text">
+                <p>Isabell Becher</p>
+                <p>2023</p>
+            </div>
         </div>
     </div>
 
+    <div class="work-span hidden reveal-down">
+        <div class="work large look-link">
+            <div class="image">
+                <p>02</p>
+            </div>
+            <div class="text">
+                <p>Schillergymnasium</p>
+                <p>2023</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-span hidden reveal-down">
+        <div class="work medium">
+            <div class="image look-link">
+                <p>04</p>
+            </div>
+            <div class="text">
+                <p>Imotep</p>
+                <p>2024</p>
+            </div>
+        </div>
+    </div>
 </section>

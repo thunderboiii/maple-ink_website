@@ -1,35 +1,37 @@
 ---
-title: Maple Ink | Your agency for Brand, Web and Social Media
+title: Maple Ink | Your agency for Branding, Web and Social Media
 layout: base.njk
 ---
 
 <section>
-    <div class="container hero-section">
+    <div class="container hero-section index-hero">
         <div class="side-hero">
             <hr class="vr1">
         </div>
         
-        <div class="hero-left">
-            <h1>We excel in <br><span class="h1-change auto-type"></span></h1>
+        <div class="hero-left index-hero-left">
+            <h1><span class="auto-type"></span></h1>
+            <p>Maple Ink increases your brands value with cohesive services in <br> web, branding and social media. </p>
+            <a href="#services">Let's Make Magic</a>
 
             <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
             <script>
                 var typed = new Typed('.auto-type', {
-                    strings: ['Branding', 'Web Design', "Social Media" ],
+                    strings: ["Maximize your Brand's Potential"],
                     typeSpeed: 150,
                     backSpeed: 100,
-                    loop: true,
+                    loop: false,
                 });
             </script>
         </div>
 
-        <div class="hero-right">
+        {# <div class="hero-right">
             <h1>楓と墨</h1>
             {# <img src="/img/pages/index/hero-img.jpg" alt="" class="hero-img color">
             <img src="/img/pages/index/hero-img-sw.png" alt="" class="hero-img sw">
-            <img src="/img/pages/index/hero-img-sw.png" alt="" class="hero-img sw deko"> #}
-        </div>
+            <img src="/img/pages/index/hero-img-sw.png" alt="" class="hero-img sw deko">
+        </div> #}
         
         <div class="lower-hero">
             <div class="sm">
@@ -49,39 +51,39 @@ layout: base.njk
     </div>                             
 </section>
 
-<section class="introduction">
-    <div class="wrapper">
-        <div class="intro box">
-            <div class="text">
-                <h2>Who are we?</h2>
-                <p>Maple Ink is your agency for Branding, Web and Social Media. As a young headed company we experience current trends in our everyday life leading to flexible and modern yet timeless approaches in our work. We support big companies, start-ups, artists and individuals on their journey to a succesful brand, website or social media presence.</p>
-            </div>
+<section class="trusted-by-sect">
+    <p>Some of our past clients</p>
+    <div class="trusted-by">
+        <img src="/img/pages/index/trusted-by/isabell-becher.png" alt="" class="hidden reveal-left">
+        <img src="/img/pages/index/trusted-by/schiller.png" alt="" class="hidden reveal-left">
+        <img src="/img/pages/index/trusted-by/othman.png" alt="" class="hidden reveal-left">
+        <img src="/img/pages/index/trusted-by/andrea-esseling.png" alt="" class="hidden reveal-left">
+    </div>
+</section>
 
-            {# <div class="symbol-wrapper">
-                <div class="symbols">
-                    <img src="/img/icons/decap-cms-logo.png" alt="">
-                    <img src="/img/icons/illustrator.png" alt="">
-                    <img src="/img/icons/figma.svg" alt="">
-                </div>
-                <hr>
-                <p>Maple Ink uses verified tools in order to create the best experience for your brand!</p>
-            </div> #}
+<section class="problem">
+    <div class="problem-wrapper">
+        <div>
+        <img src="/img/pages/index/branding.jpg" alt="">
         </div>
-
-        <div class="offers box">
-            <h2>Our Services</h2>
-            <a href="/services#branding" class="fade-in up">Branding<i class='bx bx-up-arrow-alt'></i></a>
-            <a href="/services#webdesign">Web Design<i class='bx bx-up-arrow-alt'></i></a>
-            <a href="/services#socialmedia">Social Media<i class='bx bx-up-arrow-alt'></i></a>
+        <div class="hidden reveal-right">
+            <h2>I acknowledge the value of your work; it's time your customers did too!</h2>
+            <p>It's time to set yourself apart! You've put your heart and soul into your business, but you won't earn much without a proper brand presence. Let's work on that - together. Let's enroll your stunning new brand online and offline!</p>
         </div>
     </div>
 </section>
+
+<div class="short-testimonial">
+        <i class='bx bxs-quote-alt-left'></i>
+        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, corporis."</p>
+        <p class="name">Isabell Becher - Musiktherapie/AKL</p>
+</div>
 
 <script src="/scripts/darkener.js"></script>
 
 <script src="/scripts/canvas.js"></script>
 
-<section class="index-portfolio" id="portfolio">
+{# <section class="index-portfolio" id="portfolio">
     <div class="title">
         <h4>Our Best Works Yet</h4>
         <h1>Portfolio</h1>
@@ -134,29 +136,63 @@ layout: base.njk
             </div>
         </div>
     </div>
-</section>
+</section> #}
 
-<section class="trusted-by">
-    <img src="/img/portfolio/isabell-becher/icon_isabell_mi.png" alt="">
-    <img src="/img/portfolio/schillergymnasium/icon_schiller_mi.png" alt="">
+<section class="short-portfolio">
+    <div class="text">
+        <h2>Client Showcase</h2>
+        <p>Let me showcase what I've created.</p>
+    </div>
+    <div class="portfolio-container">
+        <div class="the-brief hidden reveal-down">
+            <p>The Brief</p>
+        </div>
+
+        <div class="story hidden reveal-down">
+            <p>When the Schillergymnasium Münster came to us, they were struggeling with an outdated website that wouldn't generate a lot of leads. So we helped them by creating a modern website encapsulating their humane vision and cohesive services.</p>
+        </div>
+
+        <div class="white-space hidden reveal-down">
+
+        </div>
+
+        <div class="website-1 hidden reveal-down">
+            <img src="/img/portfolio/schillergymnasium/website-1.png" alt="">
+        </div>
+
+        <div class="website-2 hidden reveal-down">
+            <img src="/img/portfolio/schillergymnasium/aktuelles-1.png" alt="">
+        </div>
+
+        <div class="portfolio-testimonial hidden reveal-down">
+            <p><b>Testimonial</b></p>
+            <p class="text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae accusamus eum omnis enim excepturi laborum expedita nesciunt ullam, explicabo molestias natus quos! Ducimus, consequatur quibusdam!"</p>
+            <i class='bx bxs-quote-alt-left'></i>
+        </div>
+
+        <div class="image hidden reveal-down">
+
+        </div>
+    </div>
+    <p class="small"><a href="/portfolio">discover more</a></p>
 </section>
 
 <section class="testimonial-section">
     <div class="container testimonial-container">
         <div class="testimonials">
-            <h2>What Our Clients Say</h2>
+            <h2>What My Clients Say</h2>
             <div class="wrapper">
                 <div class="testimonial">
                     <img src="img/pages/index/print-marketing.jpg" alt="" class="avatar">
-                    <i class='bx bxs-quote-right' ></i>
+                    <i class='bx bxs-quote-alt-left'></i>
                     <p class="review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, ea quo quaerat quae excepturi ut inventore praesentium error nostrum unde laborum vero perferendis iste dignissimos.</p>
-                    <p class="name">John Doe</p>
-                    <p class="company">Nindo</p>
+                    <p class="name">Isabell Becher</p>
+                    <p class="company">Musiktherapie/AKL</p>
                 </div>
 
                 <div class="testimonial">
                     <img src="img/pages/index/works/schiller/nowak.jpg" alt="" class="avatar">
-                    <i class='bx bxs-quote-right' ></i>
+                    <i class='bx bxs-quote-alt-left'></i>
                     <p class="review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, ea quo quaerat quae excepturi ut inventore praesentium error nostrum unde laborum vero perferendis iste dignissimos.</p>
                     <p class="name">Andreas Nowak</p>
                     <p class="company">Schillergymnasium Münster</p>
@@ -164,27 +200,105 @@ layout: base.njk
 
                 <div class="testimonial">
                     <img src="img/pages/index/print-marketing.jpg" alt="" class="avatar">
-                    <i class='bx bxs-quote-right' ></i>
+                    <i class='bx bxs-quote-alt-left'></i>
                     <p class="review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, ea quo quaerat quae excepturi ut inventore praesentium error nostrum unde laborum vero perferendis iste dignissimos.</p>
-                    <p class="name">John Doe</p>
-                    <p class="company">Nindo</p>
+                    <p class="name">Tomi Fiegehenn</p>
+                    <p class="company">Imotep</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
- 
-<script src="scripts/app.js"></script>
 
-<div class="website-showcase" id="website-showcase">
-    <center><iframe src="https://schillergymnasium-muenster.de" frameborder="0"></iframe></center> 
-    <i class='bx bx-x'></i>
-</div>
+<section class="plans">
+    <div class="plan">
+        <div class="plan__header">
+            <h2 class="plan__title">Branding</h2>
+            <p class="plan__summary">Elevate your brand and stand out from the crowd with my tailored branding strategies.</p>
+        </div>
+        <div class="plan__description">
+            <ul class="plan__list">
+                <li>Feature</li>
+                <li>Feature</li>
+                <li>Feature</li>
+            </ul>
+        </div>
+        <div class="plan__footer">
+            <div class="plan__investment">
+                <p class="plan__starting">starting at</p>
+                <p class="plan__price">3.129,-</p>
+            </div>
+            <a href="/contact" class="plan__cta">Get Started!</a>
+        </div>
+    </div>
 
-<script>
-    openWebsite() {
-        websiteShowcase = document.getElementByID("website-showcase");
+    <div class="plan plan--highlighted">
+        <div class="plan__header">
+            <h2 class="plan__title">Web Design</h2>
+            <p class="plan__summary">Let me craft a captivating online presence for you with expert web design solutions.</p>
+        </div>
+        <div class="plan__description">
+            <ul class="plan__list">
+                <li>Feature</li>
+                <li>Feature</li>
+                <li>Feature</li>
+            </ul>
+        </div>
+        <div class="plan__footer">
+            <div class="plan__investment">
+                <p class="plan__starting">starting at</p>
+                <p class="plan__price">1.129,-</p>
+            </div>
+            <a href="/contact" class="plan__cta">Get Started!</a>
+        </div>
+    </div>
 
-        websiteShowcase.style.display = "block";
-    }
-</script>
+    <div class="plan">
+        <div class="plan__header">
+            <h2 class="plan__title">Social Media</h2>
+            <p class="plan__summary">Engage and expand your online community as I manage your social media presence strategically.</p>
+        </div>
+        <div class="plan__description">
+            <ul class="plan__list">
+                <li>Feature</li>
+                <li>Feature</li>
+                <li>Feature</li>
+            </ul>
+        </div>
+        <div class="plan__footer">
+            <div class="plan__investment">
+                <p class="plan__starting">starting at</p>
+                <p class="plan__price">500,-/m</p>
+            </div>
+            <a href="/contact" class="plan__cta">Get Started!</a>
+        </div>
+    </div>
+</section>
+
+<section class="introduction" id="services">
+    <div class="wrapper">
+        <div class="intro box">
+            <div class="text">
+                <h2>Why Maple Ink</h2>
+                <p>At Maple Ink, I specialize in Branding, Web Development, and Social Media services. Despite being an independent professional, my approach is thoroughly polished and professional. With a keen eye on current trends, I seamlessly blend flexibility and modernity with timeless strategies. My clientele ranges from large corporations to startups, artists, and individuals, all seeking to elevate their brand, website, or social media presence. Let's collaborate and make your vision a reality!</p>
+            </div>
+
+            {# <div class="symbol-wrapper">
+                <div class="symbols">
+                    <img src="/img/icons/decap-cms-logo.png" alt="">
+                    <img src="/img/icons/illustrator.png" alt="">
+                    <img src="/img/icons/figma.svg" alt="">
+                </div>
+                <hr>
+                <p>Maple Ink uses verified tools in order to create the best experience for your brand!</p>
+            </div> #}
+        </div>
+
+        <div class="offers box" >
+            <h2>My Services</h2>
+            <a href="/services#branding" class="fade-in up">Branding<i class='bx bx-up-arrow-alt'></i></a>
+            <a href="/services#webdesign">Web Design<i class='bx bx-up-arrow-alt'></i></a>
+            <a href="/services#socialmedia">Social Media<i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </div>
+</section>
