@@ -2450,6 +2450,8 @@ section {
 
 .cs-image img {
     width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
     animation: cs-image linear;
     animation-timeline: view(100% 0px);
 }
