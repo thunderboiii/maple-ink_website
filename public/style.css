@@ -489,6 +489,15 @@ hr {
     transition-delay: 400ms;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .ipad-no-reveal {
+        opacity: 1;
+        filter: blur(0);
+        transition: 400ms all ease-in;
+        transform: none;
+    }
+}
+
 
 #mouse-circle {
     width: 60px;
@@ -1721,6 +1730,12 @@ section {
     object-position: bottom;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .problem {
+        padding-inline: 8rem;
+    }
+}
+
 @media(max-width: 768px) {
     .problem {
         padding-inline: 1rem;
@@ -1781,19 +1796,19 @@ section {
 .short-portfolio .portfolio-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    "brief white website-2 image"
-    "brief website-1 website-2 image"
-    "story website-1 testimonial testimonial";
+    "story white white white"
+    "testimonial testimonial testimonial brief";
     gap: 1rem;
+    height: 90vh;
 }
 
 .short-portfolio .portfolio-container .the-brief {
     grid-area: brief;
     background: url(/img/portfolio/schillergymnasium/main.png);
     background-repeat: no-repeat;
-    background-size: 300%;
+    background-size: cover;
     background-position: center;
     border-radius: 1rem;
     padding: 1rem;
@@ -1801,6 +1816,11 @@ section {
 
 .short-portfolio .portfolio-container .white-space {
     grid-area: white;
+    background: url(img/portfolio/schillergymnasium/website.PNG);
+    background-size: cover;
+    background-position: center top;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .short-portfolio .portfolio-container .website-1 {
@@ -1882,25 +1902,21 @@ section {
     font-size: 16px;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .short-portfolio {
+        margin-inline: 8rem;
+    }
+}
+
 @media (max-width: 1000px) {
     .short-portfolio {
         margin-inline: 1rem;
     }
     .short-portfolio .portfolio-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, auto);
-        grid-template-areas: 
-        "brief"
-        "brief"
-        "story"
-        "website-1"
-        "website-1"
-        "white"
-        "website-2"
-        "website-2"
-        "image"
-        "image"
-        "testimonial"
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
     }
 
     .short-portfolio .portfolio-container img {
@@ -1909,12 +1925,19 @@ section {
     }
 
     .short-portfolio .portfolio-container .the-brief,
+    .short-portfolio .portfolio-container .white-space,
     .short-portfolio .portfolio-container .image {
         height: 500px;
     } 
     .short-portfolio .portfolio-container .website-1{
         border-radius: 1rem;
         overflow: hidden;
+    }
+
+    .short-portfolio .portfolio-container .white-space {
+        background: url(img/portfolio/schillergymnasium/website-mobile.PNG);
+        background-size: cover;
+        background-position: center
     }
 }
 
@@ -2943,6 +2966,10 @@ section {
     text-align: center;
 }
 
+.plans .plan .plan__title{
+    white-space: nowrap;
+}
+
 .plans .plan .plan__summary {
     font-size: 16px;
 }
@@ -3027,6 +3054,16 @@ section {
     font-size: 2.2rem;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .plans .plan {
+        width: 30%;
+    }
+
+    .plans .plan .plan__title {
+        font-size: 35px;
+    }
+}
+
 @media only screen and (max-device-width: 768px) {
     .plans {
         flex-direction: column;
@@ -3036,6 +3073,59 @@ section {
         width: 80%;
     }
 }
+
+.for-who .container {
+    align-items: flex-end;
+    height: auto;
+    gap: 8rem;
+}
+
+.for-who .container hr {
+    margin-bottom: 4rem;
+}
+
+.for-who .container a {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border: var(--secondary-70) 2px solid;
+    color: var(--text);
+    transition: 200ms all ease-in;
+    margin-top: 3rem;
+}
+
+.for-who .container a:hover {
+    background-color: var(--secondary-70);
+}
+
+.for-who .container .for-me {
+    padding-bottom: 10rem;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .for-who {
+        margin-inline: 1rem;
+        margin-block: 20rem;
+    }
+    
+    .for-who .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .for-who .container .for-me {
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .for-who .container hr {
+        margin-bottom: 1rem;
+    }
+}
+
+
 
 
 
@@ -3152,6 +3242,12 @@ section {
 
 .contact .disclaimer a {
     text-decoration: underline;
+}
+
+.contact .text-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
