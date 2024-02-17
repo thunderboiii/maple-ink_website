@@ -2394,18 +2394,18 @@ section {
 
 .works .work-span .work .image {
     background: url(/img/portfolio/schillergymnasium/main.png) no-repeat;
-    background-size: 180%;
+    background-size: cover;
     background-position: center;
     height: 100%;
     padding: 1rem;
 
     display: flex;
     justify-content: flex-end;
-    transition: background-size 300ms ease-out;
+    transition: all 300ms ease-out;
 }
 
 .works .work-span .work .image:hover {
-    background-size: 200%;
+    background-size: 250%;
 }
 
 .works .work-span .work.large {
@@ -3018,11 +3018,13 @@ section {
 
 .plans .plan .plan__cta {
     display: inline-block;
-    margin: 1rem auto;
+    margin: 3rem auto;
     padding: 1rem 2rem;
     border: var(--secondary-70) 2px solid;
     color: var(--text);
     transition: 200ms all ease-in;
+    margin-bottom: .5rem;
+
 }
 
 .plans .plan--highlighted .plan__cta {
@@ -3033,8 +3035,16 @@ section {
     background-color: var(--secondary-70);
 }
 
+
 .plans .plan--highlighted .plan__cta:hover {
     background-color: var(--primary-70);
+}
+
+.plans .plan .plan__learn {
+    font-size: 14px;
+    margin: 0;
+    opacity: .6;
+    text-decoration: underline;
 }
 
 .plans .plan .plan__investment {
