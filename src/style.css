@@ -753,6 +753,23 @@ header .dropdown-menu .dropdown-links a {
     width: 100%;
 }
 
+header .dropdown-menu .dropdown-links a.new-menu {
+    border: 2px solid rgb(30, 116, 255) !important;
+    border-radius: .5rem;
+    padding: .5rem .3rem !important;
+    position: relative;
+}
+
+header .dropdown-menu .dropdown-links a.new-menu::before {
+    content: 'new';
+    position: absolute;
+    top: -.6rem;
+    left: .5rem;
+    background-color: var(--background);
+    padding-inline: .5rem;
+    color: rgb(30, 116, 255);
+}
+
 header .dropdown.active .dropdown-menu .dropdown-links a {
     transform: translateX(0);
     opacity: 1;
