@@ -2421,6 +2421,18 @@ section {
     transition: all 300ms ease-out;
 }
 
+.works .work-span:nth-child(1) .work .image {
+    background: url(/img/pages/portfolio/isabell.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.works .work-span:nth-child(2) .work .image {
+    background: url(/img/pages/portfolio/schiller.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .works .work-span .work .image:hover {
     background-size: 250%;
 }

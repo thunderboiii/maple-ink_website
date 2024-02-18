@@ -8,8 +8,24 @@
     <title>{{ title }}</title>
     <meta name="description" content="{{ seoDescription }}">
     <meta name="abstract" content="{{ seoAbstract }}">
-    <meta name="og:image" content="{{ seoImage }}">
     <meta name="keywords" content="{{ seoKeywords }}">
+
+    {# OG #}
+    <meta name="og:image" content="{{ seoImage }}">
+    <meta name="og:description" content="{{ seoDescription }}">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="{{ title }}">
+
+    {# Twitter #}
+    <meta name="twitter:card" content="{{ seoImage }}">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ seoDescription }}">
+    <meta name="twitter:image" content="{{ seoImage }}">
+
+
+
+
+
 
 
     <link rel="stylesheet" href="/style.css">
