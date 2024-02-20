@@ -2997,6 +2997,13 @@ section {
     padding: 1.5rem;
 }
 
+.plans .plan .plan__scare {
+    text-align: center;
+    font-size: 14px;
+    color: var(--secondary-80);
+    margin: 0;
+}
+
 .plans .plan .plan__title,
 .plans .plan .plan__summary {
     margin: 0;
