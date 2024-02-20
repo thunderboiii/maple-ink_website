@@ -1144,6 +1144,12 @@ section {
     justify-content: flex-end;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .index-hero-left h1 {
+        font-size: 60px;
+    }
+}
+
 @media (max-width: 1000px) {
     .hero-section {
         display: flex;
@@ -3141,6 +3147,14 @@ section {
 
 .for-who .container .for-me {
     padding-bottom: 10rem;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .for-who {
+        margin-top: 20rem;
+        margin-bottom: 5rem;
+    }
+
 }
 
 @media only screen and (max-device-width: 768px) {
