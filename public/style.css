@@ -299,6 +299,11 @@ main {
     color: #7c25d3;
 }
 
+
+
+
+
+
 .page {
     margin-inline: 10rem;
     height: auto !important;
@@ -3121,6 +3126,7 @@ section {
 @media only screen and (max-device-width: 768px) {
     .plans {
         flex-direction: column;
+        padding-top: 100px;
     }
 
     .plans .plan {
