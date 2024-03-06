@@ -64,27 +64,29 @@ layout: base.njk
         </div>
     </div>
 
-    <form action="">
+    <form action="https://formsubmit.co/emil@maple-ink.com" method="POST">
+        <input type="hidden" name="_next" value="/thank-you">
+        <input type="hidden" name="_subject" value="New submission!">
         <div class="question">
             <p>Which service do you want?</p>
             <div class="input-holder">
                 <div class="check">
-                    <input type="checkbox" name="branding" id="corporate_branding"></iunput>
+                    <input type="checkbox" name="service" id="corporate_branding"></iunput>
                     <label for="corporate_branding">Corporate Branding</label>
                 </div>
 
                 <div class="check">
-                    <input type="checkbox" name="branding" id="personal_branding"></iunput>
+                    <input type="checkbox" name="service" id="personal_branding"></iunput>
                     <label for="personal_branding">Personal Branding</label>
                 </div>
                 
                 <div class="check">
-                    <input type="checkbox" name="branding" id="corporate_web"></iunput>
+                    <input type="checkbox" name="service" id="corporate_web"></iunput>
                     <label for="corporate_web">Corporate Webdesign</label>
                 </div>
 
                 <div class="check">
-                    <input type="checkbox" name="branding" id="personal_web"></iunput>
+                    <input type="checkbox" name="service" id="personal_web"></iunput>
                     <label for="personal_web">Portfolio Webdesign</label>
                 </div>
 
@@ -94,7 +96,7 @@ layout: base.njk
                 </div> #}
 
                 <div class="check">
-                    <input type="checkbox" name="branding" id="maintenance"></iunput>
+                    <input type="checkbox" name="service" id="maintenance"></iunput>
                     <label for="maintenance">Maintenance</label>
                 </div>
 
@@ -104,12 +106,12 @@ layout: base.njk
                 </div> #}
 
                 <div class="check">
-                    <input type="checkbox" name="branding" id="social_media"></iunput>
+                    <input type="checkbox" name="service" id="social_media"></iunput>
                     <label for="social_media">Social Media</label>
                 </div>
 
                 <div class="check">
-                    <input type="checkbox" name="branding" id="social_ads"></iunput>
+                    <input type="checkbox" name="service" id="social_ads"></iunput>
                     <label for="social_ads">Social Advertisement</label>
                 </div>
 
@@ -125,27 +127,27 @@ layout: base.njk
 
             <div class="input-holder">
                 <div class="check">
-                    <input type="radio" name="branding" id="1k"></iunput>
+                    <input type="radio" name="budget" id="1k"></iunput>
                     <label for="1k">1k to 5k</label>
                 </div>
 
                 <div class="check">
-                    <input type="radio" name="branding" id="5k"></iunput>
+                    <input type="radio" name="budget" id="5k"></iunput>
                     <label for="5k">5k to 15k</label>
                 </div>
 
                 <div class="check">
-                    <input type="radio" name="branding" id="15k"></iunput>
+                    <input type="radio" name="budget" id="15k"></iunput>
                     <label for="15k">15k to 25k</label>
                 </div>
 
                 <div class="check">
-                    <input type="radio" name="branding" id="25k"></iunput>
+                    <input type="radio" name="budget" id="25k"></iunput>
                     <label for="25k">25k to 50k</label>
                 </div>
 
                 <div class="check">
-                    <input type="radio" name="branding" id="50k"></iunput>
+                    <input type="radio" name="budget" id="50k"></iunput>
                     <label for="50k">50k and above</label>
                 </div>
             </div>
@@ -154,7 +156,7 @@ layout: base.njk
         <div class="question">
             <p>Tell us a bit about your project</p>
             <div class="input-holder">
-                <textarea name="" id="" cols="30" rows="10" placeholder="What is your project about?" required></textarea>
+                <textarea name="project information" id="" cols="30" rows="10" placeholder="What is your project about?" required></textarea>
             </div>
         </div>
 
@@ -162,12 +164,12 @@ layout: base.njk
             <p>Tell us a bit about yourself</p>
             <div class="input-holder yourself">
                 <div class="name text-holder">
-                    <input type="text" name="" id="" placeholder="Your Name" required>
-                    <input type="text" name="" id="" placeholder="Your Company" required>
+                    <input type="text" name="name" id="" placeholder="Your Name" required>
+                    <input type="text" name="company" id="" placeholder="Your Company" required>
                 </div>
                 <div class="email  text-holder">
-                    <input type="text" name="" id="" placeholder="Your E-mail" required>
-                    <input type="text" name="" id="" placeholder="Phone (Optional)">
+                    <input type="text" name="e-mail" id="" placeholder="Your E-mail" required>
+                    <input type="text" name="phone" id="" placeholder="Phone (Optional)">
                 </div>
             </div>
         </div>
