@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: new
+media_folder: "public/img/uploads"
+public_folder: "/img/uploads"
+collections: 
+ - name: "casestudies"
+   label: "Case Studies"
+   folder: "src/case_studies"
+   create: true
+   fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h2"}
+      - {label: "Client", name: "client", widget: "string"}
+      - {label: "Client Short", name: "client_short", widget: "string"}
+      - {label: "Branch", name: "branch", widget: "string"}
+      - {label: "Service", name: "service", widget: "string"}
+      - {label: "Main Image", name: "mainImg", widget: "image"}
+      - {label: "About", name: "about", widget: "string"}
+      - {label: "Creating Image", name: "creatingImg", widget: "image"}
+      - {label: "Creating", name: "creating", widget: "string"}
+      - {label: "Gallery 1", name: "gallery1", widget: "image"}
+      - {label: "Gallery 2", name: "gallery2", widget: "image"}
+      - {label: "Gallery 3", name: "gallery3", widget: "image"}
+      - {label: "Gallery 4", name: "gallery4", widget: "image"}
+      - {label: "Result", name: "result", widget: "string"}
+      - {label: "Testimonial", name: "testimonial", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", default: ['casestudies']}

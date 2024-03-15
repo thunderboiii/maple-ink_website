@@ -1,0 +1,44 @@
+<footer>
+    <section class="content">
+        <div class="icon-links">
+            <div class="icon">
+                 <img src="/img/icons/n_icon.svg" alt="">
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a href="/imprint">Imprint</a></li>
+                    <li><a href="/data-protection">Data Protection</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="contact">
+            <div class="contact-links">
+                <p>Luise-Rappaport-Weg 13<br> 48161 Münster</p>
+                <a href="mailto:info@maple-ink.com">info@maple-ink.com</a>
+                <a href="tel:0152 / 513 69 734">0152 / 513 69 734</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cc">
+        <p>© Maple Ink inh. Emil Becher 2024</p>
+        <p class="mi_footer"><a href="https://de.maple-ink.com" target="_blank">Created by Maple Ink <img src="/img/icons/icon.png" alt=""></a></p>
+    </section>
+</footer>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+<script src="/scripts/nav.js"></script>
